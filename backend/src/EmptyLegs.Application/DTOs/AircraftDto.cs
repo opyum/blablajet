@@ -34,6 +34,7 @@ public class CreateAircraftDto
     public decimal? Range { get; set; }
     public List<string> Amenities { get; set; } = new();
     public List<string> PhotoUrls { get; set; } = new();
+    public Guid CompanyId { get; set; }
 }
 
 public class UpdateAircraftDto

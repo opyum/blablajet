@@ -5,7 +5,6 @@
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/EmptyLegs.Tests.Unit.AssemblyInfo.cs
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/EmptyLegs.Tests.Unit.csproj.CoreCompileInputs.cache
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/EmptyLegs.Tests.Unit.sourcelink.json
-/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
 /workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll
 /workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/EmptyLegs.Tests.Unit.deps.json
@@ -209,3 +208,14 @@
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/EmptyLegs.Tests.Unit.pdb
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/EmptyLegs.Tests.Unit.genruntimeconfig.cache
 /workspace/backend/tests/EmptyLegs.Tests.Unit/obj/Debug/net8.0/ref/EmptyLegs.Tests.Unit.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/AutoFixture.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/AutoFixture.Xunit2.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Fare.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/workspace/backend/tests/EmptyLegs.Tests.Unit/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll

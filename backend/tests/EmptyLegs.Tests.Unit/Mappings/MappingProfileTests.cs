@@ -131,7 +131,7 @@ public class MappingProfileTests
             BasePrice = 1500.00m,
             CurrentPrice = 1500.00m,
             TotalSeats = 6,
-            Status = FlightStatus.Scheduled,
+                            Status = FlightStatus.Available,
             DepartureAirport = departureAirport,
             ArrivalAirport = arrivalAirport,
             Aircraft = aircraft,
@@ -202,7 +202,7 @@ public class MappingProfileTests
             Address = "123 Test Street, Paris, France",
             IsActive = true,
             IsVerified = true,
-            AverageRating = 4.5,
+            AverageRating = 4.5m,
             TotalReviews = 150,
             CreatedAt = DateTime.UtcNow
         };
@@ -248,9 +248,8 @@ public class MappingProfileTests
             Status = BookingStatus.Confirmed,
             BookingDate = DateTime.UtcNow,
             PassengerCount = 2,
-            BaseAmount = 1500.00m,
+            TotalPrice = 1500.00m,
             ServiceFees = 75.00m,
-            TaxAmount = 120.00m,
             Flight = flight,
             Passengers = passengers
         };
@@ -265,9 +264,8 @@ public class MappingProfileTests
         bookingDto.Status.Should().Be(booking.Status);
         bookingDto.BookingDate.Should().Be(booking.BookingDate);
         bookingDto.PassengerCount.Should().Be(booking.PassengerCount);
-        bookingDto.BaseAmount.Should().Be(booking.BaseAmount);
+        bookingDto.TotalPrice.Should().Be(booking.TotalPrice);
         bookingDto.ServiceFees.Should().Be(booking.ServiceFees);
-        bookingDto.TaxAmount.Should().Be(booking.TaxAmount);
         bookingDto.Flight.Should().NotBeNull();
         bookingDto.Passengers.Should().HaveCount(2);
     }
@@ -307,7 +305,7 @@ public class MappingProfileTests
         reviewDto.IsVerified.Should().Be(review.IsVerified);
         reviewDto.IsVisible.Should().Be(review.IsVisible);
         reviewDto.UserId.Should().Be(review.UserId);
-        reviewDto.UserName.Should().Be("John Doe");
+        // reviewDto.UserName.Should().Be("John Doe"); // Property removed
         reviewDto.FlightId.Should().Be(review.FlightId);
         reviewDto.CreatedAt.Should().Be(review.CreatedAt);
     }

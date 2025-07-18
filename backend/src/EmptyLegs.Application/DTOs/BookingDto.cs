@@ -46,4 +46,5 @@ public class UpdateBookingStatusDto
 {
     public BookingStatus Status { get; set; }
     public string? CancellationReason { get; set; }
+    public string? Reason { get; set; }
 }

@@ -137,3 +137,246 @@
 2025-07-18 20:00:42.730 +00:00 [INF] Executed endpoint 'EmptyLegs.API.Controllers.FlightsController.SearchFlights (EmptyLegs.API)'
 2025-07-18 20:00:42.731 +00:00 [INF] HTTP GET /api/v1/flights/search responded 200 in 16.3459 ms
 2025-07-18 20:00:42.731 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/flights/search?maxPrice=2200 - 200 null application/json; charset=utf-8 17.1642ms
+2025-07-18 21:45:04.291 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.319 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.523 +00:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'EmptyLegs.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+ rest.
+2025-07-18 21:45:04.434 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.438 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.465 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.468 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.510 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.513 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.539 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.542 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.571 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.574 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.599 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.602 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.627 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.630 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.642 +00:00 [INF] Saved 0 entities to in-memory store.
+2025-07-18 21:45:04.659 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.659 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:45:04.661 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:45:04.662 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+[2025-07-18 21:45:15 WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'EmptyLegs.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. {"EventId":{"Id":10632,"Name":"Microsoft.EntityFrameworkCore.Model.NoEntityTypeConfigurationsWarning"},"SourceContext":"Microsoft.EntityFrameworkCore.Model"}
+[2025-07-18 21:45:15 INF] Saved 0 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update"}
+[2025-07-18 21:45:15 INF] Starting Empty Legs API... {}
+[2025-07-18 21:45:15 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"Fai2025-07-18 21:45:15.732 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-07-18 21:45:16.012 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.050 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.051 +00:00 [INF] New user registered: "131a744d-91de-40ce-89a8-bc589fb5d914"
+2025-07-18 21:45:16.055 +00:00 [INF] User registered successfully: profile2557ba08-2a9b-4b51-90cb-314d8fc4b553@example.com
+2025-07-18 21:45:16.077 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 316.6533 ms
+2025-07-18 21:45:16.127 +00:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 23.4100 ms
+2025-07-18 21:45:16.152 +00:00 [ERR] Error during token refresh
+System.UnauthorizedAccessException: Invalid refresh token
+   at EmptyLegs.Application.Services.AuthService.RefreshTokenAsync(String refreshToken) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 137
+2025-07-18 21:45:16.156 +00:00 [WRN] Token refresh failed: Invalid refresh token
+2025-07-18 21:45:16.156 +00:00 [INF] HTTP POST /api/v1/auth/refresh responded 401 in 18.0809 ms
+2025-07-18 21:45:16.162 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.162 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.162 +00:00 [INF] New user registered: "0d3b8b52-faed-4311-84a6-eda0bdb4ef93"
+2025-07-18 21:45:16.163 +00:00 [INF] User registered successfully: login0ba2c4b7-496f-4b01-b1cc-d2adf8f67227@example.com
+2025-07-18 21:45:16.163 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 4.5766 ms
+2025-07-18 21:45:16.175 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.175 +00:00 [INF] User "0d3b8b52-faed-4311-84a6-eda0bdb4ef93" logged in successfully
+2025-07-18 21:45:16.175 +00:00 [INF] User logged in successfully: login0ba2c4b7-496f-4b01-b1cc-d2adf8f67227@example.com
+2025-07-18 21:45:16.175 +00:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 10.6416 ms
+2025-07-18 21:45:16.186 +00:00 [WRN] Password reset requested for non-existent email: test@example.com
+2025-07-18 21:45:16.186 +00:00 [INF] Password reset requested for email: test@example.com
+2025-07-18 21:45:16.186 +00:00 [INF] HTTP POST /api/v1/auth/reset-password responded 200 in 8.6259 ms
+2025-07-18 21:45:16.188 +00:00 [WRN] Login attempt failed for email: nonexistent@example.com
+2025-07-18 21:45:16.189 +00:00 [ERR] Error during login for email: nonexistent@example.com
+System.UnauthorizedAccessException: Invalid email or password
+   at EmptyLegs.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 45
+2025-07-18 21:45:16.189 +00:00 [WRN] Login failed for email nonexistent@example.com: Invalid email or password
+2025-07-18 21:45:16.189 +00:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 1.4553 ms
+2025-07-18 21:45:16.195 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.196 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.196 +00:00 [INF] New user registered: "83c54f66-6aa8-4677-bc33-17cd8a847416"
+2025-07-18 21:45:16.196 +00:00 [INF] User registered successfully: revoked48c9eea-c50c-4b9d-8bc8-3b3f61193063@example.com
+2025-07-18 21:45:16.196 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.5358 ms
+2025-07-18 21:45:16.203 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.204 +00:00 [INF] Refresh token revoked for user: "83c54f66-6aa8-4677-bc33-17cd8a847416"
+2025-07-18 21:45:16.204 +00:00 [INF] Token revoked successfully
+2025-07-18 21:45:16.204 +00:00 [INF] HTTP POST /api/v1/auth/revoke responded 200 in 6.0428 ms
+2025-07-18 21:45:16.206 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.207 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.207 +00:00 [INF] New user registered: "d5ce01bd-f4d3-4a61-b722-d12d64559e54"
+2025-07-18 21:45:16.207 +00:00 [INF] User registered successfully: testa97f7be9-1d26-4ef7-976d-075cd4088ca6@example.com
+2025-07-18 21:45:16.207 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.4910 ms
+2025-07-18 21:45:16.211 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.211 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.211 +00:00 [INF] New user registered: "f06cb02f-68fb-4873-a7ea-f019c8d24d5d"
+2025-07-18 21:45:16.211 +00:00 [INF] User registered successfully: refresh88ebec87-1884-442b-8f37-3aea1e010a01@example.com
+2025-07-18 21:45:16.211 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.3743 ms
+2025-07-18 21:45:16.226 +00:00 [INF] Saved 2 entities to in-memory store.
+2025-07-18 21:45:16.226 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.227 +00:00 [INF] Token refreshed for user: "f06cb02f-68fb-4873-a7ea-f019c8d24d5d"
+2025-07-18 21:45:16.227 +00:00 [INF] Token refreshed successfully
+2025-07-18 21:45:16.227 +00:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 14.6559 ms
+2025-07-18 21:45:16.235 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.235 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:16.235 +00:00 [INF] New user registered: "fbc7a333-0134-427c-a7df-9a63b28d1a02"
+2025-07-18 21:45:16.236 +00:00 [INF] User registered successfully: duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com
+2025-07-18 21:45:16.236 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.4788 ms
+2025-07-18 21:45:16.237 +00:00 [ERR] Error during registration for email: duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com
+System.InvalidOperationException: A user with this email already exists
+   at EmptyLegs.Application.Services.AuthService.RegisterAsync(RegisterUserDto registerDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 85
+2025-07-18 21:45:16.238 +00:00 [WRN] Registration failed for email duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com: A user with this email already exists
+2025-07-18 21:45:16.238 +00:00 [INF] HTTP POST /api/v1/auth/register responded 409 in 1.2533 ms
+ent email: test@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"dc8325e3-a115-4e3c-83ad-05a889561a99","ActionName":"EmptyLegs.API.Controllers.AuthController.ResetPassword (EmptyLegs.API)","RequestId":"0HNE68HGSIHM2","RequestPath":"/api/v1/auth/reset-password"}
+[2025-07-18 21:45:16 INF] Password reset requested for email: test@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"dc8325e3-a115-4e3c-83ad-05a889561a99","ActionName":"EmptyLegs.API.Controllers.AuthController.ResetPassword (EmptyLegs.API)","RequestId":"0HNE68HGSIHM2","RequestPath":"/api/v1/auth/reset-password"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/reset-password responded 200 in 8.6259 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM2"}
+[2025-07-18 21:45:16 WRN] Login attempt failed for email: nonexistent@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"3cb05288-831c-4baa-8b2d-f65ccd64f131","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HGSIHM3","RequestPath":"/api/v1/auth/login"}
+[2025-07-18 21:45:16 ERR] Error during login for email: nonexistent@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"3cb05288-831c-4baa-8b2d-f65ccd64f131","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HGSIHM3","RequestPath":"/api/v1/auth/login"}
+System.UnauthorizedAccessException: Invalid email or password
+   at EmptyLegs.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 45
+[2025-07-18 21:45:16 WRN] Login failed for email nonexistent@example.com: Invalid email or password {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"3cb05288-831c-4baa-8b2d-f65ccd64f131","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HGSIHM3","RequestPath":"/api/v1/auth/login"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/login responded 401 in 1.4553 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM3"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM5","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM5","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] New user registered: "83c54f66-6aa8-4677-bc33-17cd8a847416" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM5","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] User registered successfully: revoked48c9eea-c50c-4b9d-8bc8-3b3f61193063@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM5","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/register responded 201 in 1.5358 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM5"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"182a1f7a-acb0-4946-92ed-aff8fef7be92","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM6","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:16 INF] Refresh token revoked for user: "83c54f66-6aa8-4677-bc33-17cd8a847416" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"182a1f7a-acb0-4946-92ed-aff8fef7be92","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM6","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:16 INF] Token revoked successfully {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"182a1f7a-acb0-4946-92ed-aff8fef7be92","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM6","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/revoke responded 200 in 6.0428 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM6"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM7","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM7","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] New user registered: "d5ce01bd-f4d3-4a61-b722-d12d64559e54" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM7","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] User registered successfully: testa97f7be9-1d26-4ef7-976d-075cd4088ca6@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM7","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/register responded 201 in 1.4910 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM7"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM8","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM8","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] New user registered: "f06cb02f-68fb-4873-a7ea-f019c8d24d5d" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM8","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] User registered successfully: refresh88ebec87-1884-442b-8f37-3aea1e010a01@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHM8","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/register responded 201 in 1.3743 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM8"}
+[2025-07-18 21:45:16 INF] Saved 2 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b33b0d38-9a93-45f1-9d3d-c65975eaff92","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM9","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b33b0d38-9a93-45f1-9d3d-c65975eaff92","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM9","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:16 INF] Token refreshed for user: "f06cb02f-68fb-4873-a7ea-f019c8d24d5d" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b33b0d38-9a93-45f1-9d3d-c65975eaff92","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM9","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:16 INF] Token refreshed successfully {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b33b0d38-9a93-45f1-9d3d-c65975eaff92","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HGSIHM9","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/refresh responded 200 in 14.6559 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHM9"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMA","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMA","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] New user registered: "fbc7a333-0134-427c-a7df-9a63b28d1a02" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMA","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] User registered successfully: duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMA","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/register responded 201 in 1.4788 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHMA"}
+[2025-07-18 21:45:16 ERR] Error during registration for email: duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMB","RequestPath":"/api/v1/auth/register"}
+System.InvalidOperationException: A user with this email already exists
+   at EmptyLegs.Application.Services.AuthService.RegisterAsync(RegisterUserDto registerDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 85
+[2025-07-18 21:45:16 WRN] Registration failed for email duplicate14e3ad18-e4b1-46cc-9f31-9912c153ff76@example.com: A user with this email already exists {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"b0d76f9e-a642-493a-83d4-b03111620d76","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HGSIHMB","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:16 INF] HTTP POST /api/v1/auth/register responded 409 in 1.2533 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HGSIHMB"}
+[2025-07-18 21:45:40 WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'EmptyLegs.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. {"EventId":{"Id":10632,"Name":"Microsoft.EntityFrameworkCore.Model.NoEntityTypeConfigurationsWarning"},"SourceContext":"Microsoft.EntityFrameworkCore.Model"}
+[2025-07-18 21:45:40 INF] Saved 0 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update"}
+[2025-07-18 21:45:40 INF] Starting Empty Legs API... {}
+[2025-07-18 21:45:40 WRN] Failed to determine the https port for redirect. {"EventId":{"Id":3,"Name":"Fai2025-07-18 21:45:40.872 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-07-18 21:45:41.159 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.198 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.199 +00:00 [INF] New user registered: "ac01ce81-fef0-42b2-8c6d-1a0ca6e6d62a"
+2025-07-18 21:45:41.203 +00:00 [INF] User registered successfully: profilea545d997-1378-440e-bc2e-cc0da533b47e@example.com
+2025-07-18 21:45:41.224 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 323.2023 ms
+2025-07-18 21:45:41.275 +00:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 23.3322 ms
+2025-07-18 21:45:41.300 +00:00 [ERR] Error during token refresh
+System.UnauthorizedAccessException: Invalid refresh token
+   at EmptyLegs.Application.Services.AuthService.RefreshTokenAsync(String refreshToken) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 137
+2025-07-18 21:45:41.303 +00:00 [WRN] Token refresh failed: Invalid refresh token
+2025-07-18 21:45:41.304 +00:00 [INF] HTTP POST /api/v1/auth/refresh responded 401 in 18.3928 ms
+2025-07-18 21:45:41.310 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.310 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.310 +00:00 [INF] New user registered: "40a8011a-2dd4-4641-9fc8-675982836851"
+2025-07-18 21:45:41.311 +00:00 [INF] User registered successfully: login2adababf-fc81-40e1-a118-14f94d661e02@example.com
+2025-07-18 21:45:41.311 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 4.6892 ms
+2025-07-18 21:45:41.323 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.323 +00:00 [INF] User "40a8011a-2dd4-4641-9fc8-675982836851" logged in successfully
+2025-07-18 21:45:41.323 +00:00 [INF] User logged in successfully: login2adababf-fc81-40e1-a118-14f94d661e02@example.com
+2025-07-18 21:45:41.324 +00:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 11.2224 ms
+2025-07-18 21:45:41.334 +00:00 [WRN] Password reset requested for non-existent email: test@example.com
+2025-07-18 21:45:41.334 +00:00 [INF] Password reset requested for email: test@example.com
+2025-07-18 21:45:41.335 +00:00 [INF] HTTP POST /api/v1/auth/reset-password responded 200 in 8.9422 ms
+2025-07-18 21:45:41.339 +00:00 [WRN] Login attempt failed for email: nonexistent@example.com
+2025-07-18 21:45:41.340 +00:00 [ERR] Error during login for email: nonexistent@example.com
+System.UnauthorizedAccessException: Invalid email or password
+   at EmptyLegs.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 45
+2025-07-18 21:45:41.340 +00:00 [WRN] Login failed for email nonexistent@example.com: Invalid email or password
+2025-07-18 21:45:41.340 +00:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 1.2310 ms
+2025-07-18 21:45:41.346 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.346 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.346 +00:00 [INF] New user registered: "86908d8a-ddc6-485b-85e3-9446df873f5c"
+2025-07-18 21:45:41.346 +00:00 [INF] User registered successfully: revokeaf5f0665-d351-4ed1-9ba2-92c73285a86d@example.com
+2025-07-18 21:45:41.347 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.5021 ms
+2025-07-18 21:45:41.354 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.355 +00:00 [INF] Refresh token revoked for user: "86908d8a-ddc6-485b-85e3-9446df873f5c"
+2025-07-18 21:45:41.355 +00:00 [INF] Token revoked successfully
+2025-07-18 21:45:41.355 +00:00 [INF] HTTP POST /api/v1/auth/revoke responded 200 in 6.0525 ms
+2025-07-18 21:45:41.357 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.358 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.358 +00:00 [INF] New user registered: "f2a885c6-52e3-4ad6-b00d-12816755167a"
+2025-07-18 21:45:41.358 +00:00 [INF] User registered successfully: test95227106-9510-44b2-a76c-b1898649d040@example.com
+2025-07-18 21:45:41.358 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.5076 ms
+2025-07-18 21:45:41.362 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.362 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.363 +00:00 [INF] New user registered: "465a9a5e-0fca-4e8b-8990-115c7baa83f1"
+2025-07-18 21:45:41.363 +00:00 [INF] User registered successfully: refreshc8ff7c94-f4b1-46b2-9c62-496266eb23d0@example.com
+2025-07-18 21:45:41.363 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.5930 ms
+2025-07-18 21:45:41.378 +00:00 [INF] Saved 2 entities to in-memory store.
+2025-07-18 21:45:41.378 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.378 +00:00 [INF] Token refreshed for user: "465a9a5e-0fca-4e8b-8990-115c7baa83f1"
+2025-07-18 21:45:41.378 +00:00 [INF] Token refreshed successfully
+2025-07-18 21:45:41.379 +00:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 15.2221 ms
+2025-07-18 21:45:41.383 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.383 +00:00 [INF] Saved 1 entities to in-memory store.
+2025-07-18 21:45:41.383 +00:00 [INF] New user registered: "a49a1093-9d82-4477-8bb5-e3e592ee3f78"
+2025-07-18 21:45:41.383 +00:00 [INF] User registered successfully: duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com
+2025-07-18 21:45:41.383 +00:00 [INF] HTTP POST /api/v1/auth/register responded 201 in 1.3621 ms
+2025-07-18 21:45:41.385 +00:00 [ERR] Error during registration for email: duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com
+System.InvalidOperationException: A user with this email already exists
+   at EmptyLegs.Application.Services.AuthService.RegisterAsync(RegisterUserDto registerDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 85
+2025-07-18 21:45:41.385 +00:00 [WRN] Registration failed for email duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com: A user with this email already exists
+2025-07-18 21:45:41.385 +00:00 [INF] HTTP POST /api/v1/auth/register responded 409 in 1.2966 ms
+ent email: test@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f79185b1-5710-4383-b210-327d4317e6d8","ActionName":"EmptyLegs.API.Controllers.AuthController.ResetPassword (EmptyLegs.API)","RequestId":"0HNE68HOC9F3K","RequestPath":"/api/v1/auth/reset-password"}
+[2025-07-18 21:45:41 INF] Password reset requested for email: test@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f79185b1-5710-4383-b210-327d4317e6d8","ActionName":"EmptyLegs.API.Controllers.AuthController.ResetPassword (EmptyLegs.API)","RequestId":"0HNE68HOC9F3K","RequestPath":"/api/v1/auth/reset-password"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/reset-password responded 200 in 8.9422 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3K"}
+[2025-07-18 21:45:41 WRN] Login attempt failed for email: nonexistent@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"a5c467aa-a852-4cd9-9799-a112054e02c1","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HOC9F3L","RequestPath":"/api/v1/auth/login"}
+[2025-07-18 21:45:41 ERR] Error during login for email: nonexistent@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"a5c467aa-a852-4cd9-9799-a112054e02c1","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HOC9F3L","RequestPath":"/api/v1/auth/login"}
+System.UnauthorizedAccessException: Invalid email or password
+   at EmptyLegs.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 45
+[2025-07-18 21:45:41 WRN] Login failed for email nonexistent@example.com: Invalid email or password {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"a5c467aa-a852-4cd9-9799-a112054e02c1","ActionName":"EmptyLegs.API.Controllers.AuthController.Login (EmptyLegs.API)","RequestId":"0HNE68HOC9F3L","RequestPath":"/api/v1/auth/login"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/login responded 401 in 1.2310 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3L"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3N","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3N","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] New user registered: "86908d8a-ddc6-485b-85e3-9446df873f5c" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3N","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] User registered successfully: revokeaf5f0665-d351-4ed1-9ba2-92c73285a86d@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3N","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/register responded 201 in 1.5021 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3N"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"95711c7b-5a65-4e1e-9f22-63ff8c14efac","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3O","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:41 INF] Refresh token revoked for user: "86908d8a-ddc6-485b-85e3-9446df873f5c" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"95711c7b-5a65-4e1e-9f22-63ff8c14efac","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3O","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:41 INF] Token revoked successfully {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"95711c7b-5a65-4e1e-9f22-63ff8c14efac","ActionName":"EmptyLegs.API.Controllers.AuthController.RevokeToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3O","RequestPath":"/api/v1/auth/revoke"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/revoke responded 200 in 6.0525 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3O"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3P","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3P","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] New user registered: "f2a885c6-52e3-4ad6-b00d-12816755167a" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3P","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] User registered successfully: test95227106-9510-44b2-a76c-b1898649d040@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3P","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/register responded 201 in 1.5076 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3P"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3Q","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3Q","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] New user registered: "465a9a5e-0fca-4e8b-8990-115c7baa83f1" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3Q","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] User registered successfully: refreshc8ff7c94-f4b1-46b2-9c62-496266eb23d0@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3Q","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/register responded 201 in 1.5930 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3Q"}
+[2025-07-18 21:45:41 INF] Saved 2 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"71b2d26f-079e-4678-a963-ceb56e31c1fc","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3R","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"71b2d26f-079e-4678-a963-ceb56e31c1fc","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3R","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:41 INF] Token refreshed for user: "465a9a5e-0fca-4e8b-8990-115c7baa83f1" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"71b2d26f-079e-4678-a963-ceb56e31c1fc","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3R","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:41 INF] Token refreshed successfully {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"71b2d26f-079e-4678-a963-ceb56e31c1fc","ActionName":"EmptyLegs.API.Controllers.AuthController.RefreshToken (EmptyLegs.API)","RequestId":"0HNE68HOC9F3R","RequestPath":"/api/v1/auth/refresh"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/refresh responded 200 in 15.2221 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3R"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3S","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] Saved 1 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3S","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] New user registered: "a49a1093-9d82-4477-8bb5-e3e592ee3f78" {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3S","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] User registered successfully: duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3S","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/register responded 201 in 1.3621 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3S"}
+[2025-07-18 21:45:41 ERR] Error during registration for email: duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com {"SourceContext":"EmptyLegs.Application.Services.AuthService","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3T","RequestPath":"/api/v1/auth/register"}
+System.InvalidOperationException: A user with this email already exists
+   at EmptyLegs.Application.Services.AuthService.RegisterAsync(RegisterUserDto registerDto) in /workspace/backend/src/EmptyLegs.Application/Services/AuthService.cs:line 85
+[2025-07-18 21:45:41 WRN] Registration failed for email duplicatee62b7fb6-46c4-425c-933d-82441334d3cf@example.com: A user with this email already exists {"SourceContext":"EmptyLegs.API.Controllers.AuthController","ActionId":"f5e6bbba-304f-41d7-a3fe-42bcf81c853b","ActionName":"EmptyLegs.API.Controllers.AuthController.Register (EmptyLegs.API)","RequestId":"0HNE68HOC9F3T","RequestPath":"/api/v1/auth/register"}
+[2025-07-18 21:45:41 INF] HTTP POST /api/v1/auth/register responded 409 in 1.2966 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNE68HOC9F3T"}

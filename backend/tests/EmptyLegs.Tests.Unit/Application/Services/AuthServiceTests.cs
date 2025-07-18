@@ -172,7 +172,7 @@ public class AuthServiceTests
             .ReturnsAsync((User?)null); // No existing user
 
         _mockUnitOfWork.Setup(x => x.Users.AddAsync(It.IsAny<User>(), default))
-            .ReturnsAsync((User user) => user);
+            .ReturnsAsync((User user, CancellationToken ct) => user);
 
         _mockUnitOfWork.Setup(x => x.SaveChangesAsync(default))
             .ReturnsAsync(1);

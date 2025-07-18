@@ -1,0 +1,19 @@
+2025-07-18 21:12:07.124 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:12:07.159 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:12:07.204 +00:00 [INF] Now listening on: http://localhost:5000
+2025-07-18 21:12:07.206 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-18 21:12:07.206 +00:00 [INF] Hosting environment: Production
+2025-07-18 21:12:07.206 +00:00 [INF] Content root path: /workspace/backend/src/EmptyLegs.API
+2025-07-18 21:27:06.864 +00:00 [INF] Application is shutting down...
+2025-07-18 21:27:17.517 +00:00 [INF] Starting Empty Legs API...
+2025-07-18 21:27:17.550 +00:00 [INF] User profile is available. Using '/home/ubuntu/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-18 21:27:17.597 +00:00 [INF] Now listening on: http://localhost:5000
+2025-07-18 21:27:17.599 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-18 21:27:17.599 +00:00 [INF] Hosting environment: Production
+2025-07-18 21:27:17.599 +00:00 [INF] Content root path: /workspace/backend/src/EmptyLegs.API
+2025-07-18 21:27:46.859 +00:00 [INF] Application is shutting down...
+[2025-07-18 21:28:56 WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'EmptyLegs.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. {"EventId":{"Id":10632,"Name":"Microsoft.EntityFrameworkCore.Model.NoEntityTypeConfigurationsWarning"},"SourceContext":"Microsoft.EntityFrameworkCore.Model"}
+[2025-07-18 21:28:56 INF] Saved 0 entities to in-memory store. {"EventId":{"Id":30100,"Name":"Microsoft.EntityFrameworkCore.Update.ChangesSaved"},"SourceContext":"Microsoft.EntityFrameworkCore.Update"}
+[2025-07-18 21:28:56 INF] Starting Empty Legs API... {}
+NF] Saved 0 entities to in-memory store.
+2025-07-18 21:28:56.840 +00:00 [INF] Starting Empty Legs API...

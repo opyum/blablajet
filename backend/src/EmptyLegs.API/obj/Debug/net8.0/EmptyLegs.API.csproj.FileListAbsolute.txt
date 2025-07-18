@@ -155,3 +155,12 @@
 /workspace/backend/src/EmptyLegs.API/obj/Debug/net8.0/EmptyLegs.API.pdb
 /workspace/backend/src/EmptyLegs.API/obj/Debug/net8.0/EmptyLegs.API.genruntimeconfig.cache
 /workspace/backend/src/EmptyLegs.API/obj/Debug/net8.0/ref/EmptyLegs.API.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll

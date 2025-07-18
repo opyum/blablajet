@@ -59,14 +59,29 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 // Database Configuration
-builder.Services.AddDbContext<EmptyLegsDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+if (builder.Environment.IsDevelopment() && builder.Configuration.GetValue<bool>("UseInMemoryDatabase", false))
+{
+    builder.Services.AddDbContext<EmptyLegsDbContext>(options =>
+        options.UseInMemoryDatabase("EmptyLegsInMemory"));
+}
+else
+{
+    builder.Services.AddDbContext<EmptyLegsDbContext>(options =>
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+}
 
 // Redis Configuration
-builder.Services.AddStackExchangeRedisCache(options =>
+if (!builder.Environment.IsDevelopment() || !builder.Configuration.GetValue<bool>("UseInMemoryDatabase", false))
 {
-    options.Configuration = builder.Configuration.GetConnectionString("Redis");
-});
+    builder.Services.AddStackExchangeRedisCache(options =>
+    {
+        options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    });
+}
+else
+{
+    builder.Services.AddMemoryCache();
+}
 
 // JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JWT");
@@ -135,6 +150,14 @@ builder.Services.AddHealthChecks()
     .AddRedis(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379");
 
 var app = builder.Build();
+
+// Database initialization
+if (app.Environment.IsDevelopment() && app.Configuration.GetValue<bool>("UseInMemoryDatabase", false))
+{
+    using var scope = app.Services.CreateScope();
+    var context = scope.ServiceProvider.GetRequiredService<EmptyLegsDbContext>();
+    context.Database.EnsureCreated();
+}
 
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
