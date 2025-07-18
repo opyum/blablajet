@@ -23,6 +23,7 @@ public class EmptyLegsDbContext : DbContext
     public DbSet<Review> Reviews { get; set; }
     public DbSet<UserAlert> UserAlerts { get; set; }
     public DbSet<BookingService> BookingServices { get; set; }
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -44,6 +45,7 @@ public class EmptyLegsDbContext : DbContext
         modelBuilder.Entity<Review>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<UserAlert>().HasQueryFilter(e => !e.IsDeleted);
         modelBuilder.Entity<BookingService>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<RefreshToken>().HasQueryFilter(e => !e.IsDeleted);
 
         // Configure relationships and constraints
         ConfigureUserRelationships(modelBuilder);

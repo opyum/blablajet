@@ -125,6 +125,9 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Progr
 
 // Dependency Injection
 builder.Services.AddScoped<EmptyLegs.Core.Interfaces.IUnitOfWork, EmptyLegs.Infrastructure.Repositories.UnitOfWork>();
+builder.Services.AddScoped<EmptyLegs.Core.Interfaces.IJwtTokenService, EmptyLegs.Application.Services.JwtTokenService>();
+builder.Services.AddScoped<EmptyLegs.Application.Interfaces.IAuthService, EmptyLegs.Application.Services.AuthService>();
+builder.Services.AddHttpContextAccessor();
 
 // Health Checks
 builder.Services.AddHealthChecks()

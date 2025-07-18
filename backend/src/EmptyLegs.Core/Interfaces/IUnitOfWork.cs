@@ -16,6 +16,7 @@ public interface IUnitOfWork : IDisposable
     IRepository<Review> Reviews { get; }
     IRepository<UserAlert> UserAlerts { get; }
     IRepository<BookingService> BookingServices { get; }
+    IRepository<RefreshToken> RefreshTokens { get; }
     
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     Task BeginTransactionAsync(CancellationToken cancellationToken = default);

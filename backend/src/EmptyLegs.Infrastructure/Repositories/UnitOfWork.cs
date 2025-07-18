@@ -27,6 +27,7 @@ public class UnitOfWork : IUnitOfWork
         Reviews = new Repository<Review>(_context);
         UserAlerts = new Repository<UserAlert>(_context);
         BookingServices = new Repository<BookingService>(_context);
+        RefreshTokens = new Repository<RefreshToken>(_context);
     }
 
     public IRepository<User> Users { get; private set; }
@@ -41,6 +42,7 @@ public class UnitOfWork : IUnitOfWork
     public IRepository<Review> Reviews { get; private set; }
     public IRepository<UserAlert> UserAlerts { get; private set; }
     public IRepository<BookingService> BookingServices { get; private set; }
+    public IRepository<RefreshToken> RefreshTokens { get; private set; }
 
     public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

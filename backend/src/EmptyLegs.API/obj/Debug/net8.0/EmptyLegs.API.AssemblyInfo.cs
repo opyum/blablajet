@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmptyLegs.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e08805e0371cfce64f92579d4dfd58f51ef3e97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f8e77aecfdea89669e861ebd4f80c9c0a62ee32")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmptyLegs.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmptyLegs.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

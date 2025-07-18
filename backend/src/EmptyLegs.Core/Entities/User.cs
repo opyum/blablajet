@@ -19,6 +19,7 @@ public class User : BaseEntity
     public Company? Company { get; set; }
     public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
     public ICollection<UserAlert> Alerts { get; set; } = new List<UserAlert>();
+    public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     
     public string FullName => $"{FirstName} {LastName}";
 }
