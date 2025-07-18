@@ -90,3 +90,13 @@ public class FlightSearchResultDto
     public bool HasNextPage { get; set; }
     public bool HasPreviousPage { get; set; }
 }
+
+public class FlightAvailabilityDto
+{
+    public Guid FlightId { get; set; }
+    public int AvailableSeats { get; set; }
+    public int TotalSeats { get; set; }
+    public decimal OccupancyRate { get; set; }
+    public bool IsFullyBooked { get; set; }
+    public DateTime LastUpdated { get; set; }
+}

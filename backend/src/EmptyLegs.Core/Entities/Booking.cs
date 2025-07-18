@@ -26,6 +26,18 @@ public class Booking : BaseEntity
     public ICollection<BookingService> AdditionalServices { get; set; } = new List<BookingService>();
     
     // Computed properties
-    public decimal TotalAmount => TotalPrice + ServiceFees;
-    public bool CanBeCancelled => Status == BookingStatus.Confirmed && Flight.DepartureTime > DateTime.UtcNow.AddHours(24);
+    public decimal TotalAmount => TotalPrice + ServiceFees + AdditionalServices.Sum(s => s.TotalPrice);
+    public bool CanBeCancelled => (Status == BookingStatus.Pending || Status == BookingStatus.Confirmed) 
+                                  && DateTime.UtcNow.Subtract(BookingDate).TotalHours < 24;
+
+    // Methods
+    public string GenerateBookingReference()
+    {
+        var random = new Random();
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var reference = "EL" + new string(Enumerable.Repeat(chars, 8)
+            .Select(s => s[random.Next(s.Length)]).ToArray());
+        BookingReference = reference;
+        return reference;
+    }
 }

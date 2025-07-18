@@ -45,6 +45,15 @@ public class PaymentDto
     public bool IsRefunded { get; set; }
 }
 
+public class CreatePaymentDto
+{
+    public decimal Amount { get; set; }
+    public string Currency { get; set; } = "EUR";
+    public string PaymentMethod { get; set; } = string.Empty;
+    public Guid BookingId { get; set; }
+    public string? PaymentMethodId { get; set; } // Stripe payment method ID
+}
+
 // Review DTOs
 public class ReviewDto
 {

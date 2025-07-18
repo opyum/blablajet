@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/EmptyLegs.API.props" />
+</Project>
