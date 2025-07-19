@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3wC2E5GWzz4=",
+  "success": true,
+  "projectFilePath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/ubuntu/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

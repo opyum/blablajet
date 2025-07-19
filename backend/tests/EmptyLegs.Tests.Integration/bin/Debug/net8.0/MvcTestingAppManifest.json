@@ -1,0 +1,6 @@
+{
+  "EmptyLegs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/workspace\/backend\/src\/EmptyLegs.API",
+  "EmptyLegs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/workspace\/backend\/src\/EmptyLegs.Application",
+  "EmptyLegs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/workspace\/backend\/src\/EmptyLegs.Core",
+  "EmptyLegs.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/workspace\/backend\/src\/EmptyLegs.Infrastructure"
+}

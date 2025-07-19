@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: empty-legs-postgres
+    environment:
+      POSTGRES_DB: emptylegs
+      POSTGRES_USER: emptylegs
+      POSTGRES_PASSWORD: emptylegs123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+    networks:
+      - empty-legs-network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: empty-legs-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - empty-legs-network
+
+  # Backend API
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: empty-legs-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=emptylegs;Username=emptylegs;Password=emptylegs123
+      - ConnectionStrings__Redis=redis:6379
+      - JWT__Secret=your-super-secret-jwt-key-here-change-in-production
+      - JWT__Issuer=empty-legs-api
+      - JWT__Audience=empty-legs-client
+      - Stripe__SecretKey=sk_test_your_stripe_secret_key
+      - Stripe__PublishableKey=pk_test_your_stripe_publishable_key
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./backend:/app
+      - /app/bin
+      - /app/obj
+    networks:
+      - empty-legs-network
+
+  # Frontend Web
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: empty-legs-frontend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
+      - NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - empty-legs-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  empty-legs-network:
+    driver: bridge

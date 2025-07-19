@@ -1,0 +1,13 @@
+/workspace/backend/src/EmptyLegs.Core/bin/Debug/net8.0/EmptyLegs.Core.deps.json
+/workspace/backend/src/EmptyLegs.Core/bin/Debug/net8.0/EmptyLegs.Core.dll
+/workspace/backend/src/EmptyLegs.Core/bin/Debug/net8.0/EmptyLegs.Core.pdb
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.csproj.AssemblyReference.cache
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.AssemblyInfoInputs.cache
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.AssemblyInfo.cs
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.csproj.CoreCompileInputs.cache
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.sourcelink.json
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.dll
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/refint/EmptyLegs.Core.dll
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/EmptyLegs.Core.pdb
+/workspace/backend/src/EmptyLegs.Core/obj/Debug/net8.0/ref/EmptyLegs.Core.dll

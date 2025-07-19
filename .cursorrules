@@ -1,0 +1,362 @@
+# Empty Legs Platform - Cursor Rules
+
+## 🏗️ Architecture Overview
+
+This project is a comprehensive platform for managing empty leg flights with three main components:
+- **API Backend**: C# ASP.NET Core Web API
+- **Web Frontend**: Next.js with TypeScript
+- **Mobile App**: React Native with TypeScript
+
+### Stack Selection
+- **Backend**: C# (.NET 8), ASP.NET Core Web API, Entity Framework Core
+- **Database**: PostgreSQL with Redis for caching
+- **Frontend Web**: Next.js 14 (App Router), TypeScript, Tailwind CSS, shadcn/ui
+- **Mobile**: React Native with Expo, TypeScript, React Query
+- **Authentication**: JWT with refresh tokens, Azure AD B2C
+- **Payments**: Stripe
+- **File Storage**: Azure Blob Storage
+- **Notifications**: SignalR (real-time), Twilio (SMS), SendGrid (email)
+- **Maps**: Google Maps API
+- **Deployment**: Azure Container Apps / Azure App Service
+
+## 📁 Project Structure
+
+```
+/
+├── backend/                    # C# ASP.NET Core API
+│   ├── src/
+│   │   ├── EmptyLegs.API/     # Main API project
+│   │   ├── EmptyLegs.Core/    # Domain models & interfaces
+│   │   ├── EmptyLegs.Infrastructure/ # Data access & external services
+│   │   └── EmptyLegs.Application/     # Business logic & services
+│   └── tests/
+├── frontend/                   # Next.js web application
+│   ├── src/
+│   │   ├── app/               # App Router pages
+│   │   ├── components/        # Reusable UI components
+│   │   ├── lib/              # Utilities & configurations
+│   │   └── types/            # TypeScript type definitions
+├── mobile/                     # React Native app
+│   ├── src/
+│   │   ├── screens/          # Screen components
+│   │   ├── components/       # Reusable components
+│   │   ├── navigation/       # Navigation configuration
+│   │   ├── services/         # API calls & utilities
+│   │   └── types/           # TypeScript types
+└── shared/                     # Shared types & utilities
+```
+
+## 🎯 Backend Rules (C# API)
+
+### Code Organization
+- Use Clean Architecture pattern with clear separation of concerns
+- Follow SOLID principles and DDD patterns
+- Use MediatR for CQRS implementation
+- Implement Repository and Unit of Work patterns
+- Use AutoMapper for object mapping
+
+### Naming Conventions
+- Use PascalCase for classes, methods, properties, and public members
+- Use camelCase for private fields and local variables
+- Prefix interfaces with 'I' (e.g., `IFlightService`)
+- Use descriptive names that clearly indicate purpose
+
+### Entity Framework & Database
+- Use Code-First approach with Entity Framework Core
+- Create migrations for all database changes
+- Use fluent API for complex configurations
+- Implement soft delete for critical entities
+- Use database indexes for frequently queried fields
+- Implement proper foreign key relationships
+
+### API Design
+- Follow RESTful conventions
+- Use HTTP status codes correctly (200, 201, 400, 401, 403, 404, 500)
+- Implement proper error handling with global exception middleware
+- Use DTOs for all API requests/responses
+- Implement API versioning from the start
+- Add comprehensive Swagger documentation
+- Implement rate limiting and request validation
+
+### Security
+- Use JWT tokens with refresh token rotation
+- Implement role-based authorization (Admin, Company, User)
+- Validate all inputs and sanitize data
+- Use HTTPS only in production
+- Implement CORS properly
+- Log security events and failed authentication attempts
+
+### Code Example Structure:
+```csharp
+// Domain Entity
+public class Flight : BaseEntity
+{
+    public string FlightNumber { get; set; }
+    public DateTime DepartureTime { get; set; }
+    public string DepartureLocation { get; set; }
+    public string ArrivalLocation { get; set; }
+    public int AvailableSeats { get; set; }
+    public decimal Price { get; set; }
+    public Guid CompanyId { get; set; }
+    public Company Company { get; set; }
+}
+
+// Service Interface
+public interface IFlightService
+{
+    Task<FlightDto> CreateFlightAsync(CreateFlightDto request);
+    Task<IEnumerable<FlightDto>> SearchFlightsAsync(FlightSearchDto criteria);
+}
+
+// Controller
+[ApiController]
+[Route("api/v1/[controller]")]
+public class FlightsController : ControllerBase
+{
+    private readonly IFlightService _flightService;
+    
+    [HttpPost]
+    [Authorize(Roles = "Company")]
+    public async Task<ActionResult<FlightDto>> CreateFlight([FromBody] CreateFlightDto request)
+    {
+        var result = await _flightService.CreateFlightAsync(request);
+        return CreatedAtAction(nameof(GetFlight), new { id = result.Id }, result);
+    }
+}
+```
+
+## 🌐 Frontend Web Rules (Next.js)
+
+### Code Organization
+- Use App Router with TypeScript
+- Implement Server Components where possible
+- Use Client Components only when necessary (interactivity, browser APIs)
+- Organize components by feature, not by type
+- Create reusable UI components with shadcn/ui
+
+### Naming Conventions
+- Use PascalCase for React components
+- Use camelCase for functions, variables, and props
+- Use kebab-case for file names and folders
+- Prefix custom hooks with 'use'
+
+### State Management
+- Use React Query/TanStack Query for server state
+- Use Zustand for client state management
+- Minimize use of useState for complex state
+- Implement optimistic updates where appropriate
+
+### Styling
+- Use Tailwind CSS with custom design system
+- Create reusable component variants with class-variance-authority
+- Use CSS modules for component-specific styles when needed
+- Implement responsive design mobile-first
+
+### Data Fetching
+- Use Server Components for initial data loading
+- Implement proper loading and error states
+- Use React Query for client-side data fetching
+- Implement infinite scrolling for lists
+- Cache API responses appropriately
+
+### Code Example:
+```typescript
+// Type definitions
+interface Flight {
+  id: string;
+  flightNumber: string;
+  departureTime: string;
+  departureLocation: string;
+  arrivalLocation: string;
+  price: number;
+  availableSeats: number;
+}
+
+// Server Component
+async function FlightsPage() {
+  const initialFlights = await getFlights();
+  
+  return (
+    <div className="container mx-auto px-4">
+      <FlightSearch />
+      <FlightList initialData={initialFlights} />
+    </div>
+  );
+}
+
+// Client Component with React Query
+'use client';
+function FlightList({ initialData }: { initialData: Flight[] }) {
+  const { data: flights, isLoading } = useQuery({
+    queryKey: ['flights'],
+    queryFn: fetchFlights,
+    initialData,
+  });
+
+  if (isLoading) return <FlightListSkeleton />;
+  
+  return (
+    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {flights?.map((flight) => (
+        <FlightCard key={flight.id} flight={flight} />
+      ))}
+    </div>
+  );
+}
+```
+
+## 📱 Mobile Rules (React Native)
+
+### Code Organization
+- Use Expo managed workflow for faster development
+- Organize screens by feature/module
+- Create reusable components with consistent styling
+- Use React Navigation v6 for navigation
+
+### State Management
+- Use React Query for server state
+- Use Context API or Zustand for global client state
+- Implement offline-first approach with React Query persistence
+- Handle network connectivity changes
+
+### Performance
+- Use FlatList for large lists with proper optimization
+- Implement image caching and lazy loading
+- Use React.memo and useMemo for expensive computations
+- Optimize bundle size with code splitting
+
+### Platform-Specific Code
+- Use Platform.select() for platform differences
+- Create separate components for iOS/Android when needed
+- Follow platform-specific design guidelines
+
+### Code Example:
+```typescript
+// Screen Component
+function FlightSearchScreen() {
+  const navigation = useNavigation();
+  const { data: flights, isLoading } = useFlights();
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <SearchHeader />
+      <FlatList
+        data={flights}
+        renderItem={({ item }) => <FlightCard flight={item} />}
+        keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={isLoading} onRefresh={refetch} />
+        }
+      />
+    </SafeAreaView>
+  );
+}
+```
+
+## 🔒 Security Rules
+
+### Authentication & Authorization
+- Implement JWT with refresh tokens
+- Use secure storage for sensitive data
+- Implement biometric authentication for mobile
+- Add rate limiting on sensitive endpoints
+- Log all authentication attempts
+
+### Data Protection
+- Encrypt sensitive data at rest
+- Use HTTPS/TLS for all communications
+- Implement proper input validation
+- Sanitize all user inputs
+- Follow GDPR compliance requirements
+
+## 🧪 Testing Rules
+
+### Backend Testing
+- Write unit tests for all business logic
+- Use integration tests for API endpoints
+- Mock external dependencies
+- Achieve minimum 80% code coverage
+- Use xUnit and FluentAssertions
+
+### Frontend Testing
+- Write unit tests for utilities and hooks
+- Use React Testing Library for component tests
+- Implement E2E tests with Playwright
+- Test accessibility with axe-core
+
+## 📋 Code Quality Rules
+
+### General
+- Use ESLint and Prettier for consistent formatting
+- Implement pre-commit hooks with Husky
+- Use conventional commits for version control
+- Write clear, descriptive commit messages
+- Document complex logic with comments
+
+### Error Handling
+- Implement global error boundaries
+- Log errors with appropriate context
+- Show user-friendly error messages
+- Implement retry mechanisms for failed requests
+
+### Performance
+- Implement proper caching strategies
+- Use compression for API responses
+- Optimize images and assets
+- Monitor performance metrics
+
+## 🚀 Deployment Rules
+
+### Environment Management
+- Use environment variables for configuration
+- Implement proper secrets management
+- Create separate environments (dev, staging, prod)
+- Use infrastructure as code
+
+### CI/CD
+- Implement automated testing in pipelines
+- Use blue-green deployment strategies
+- Implement proper rollback mechanisms
+- Monitor deployment health
+
+## 📊 Monitoring & Analytics
+
+### Logging
+- Use structured logging with Serilog
+- Implement correlation IDs for request tracing
+- Log business events and user actions
+- Monitor API performance and errors
+
+### Analytics
+- Track user behavior and feature usage
+- Monitor application performance
+- Implement real-time dashboards
+- Set up alerting for critical issues
+
+## 🔄 Real-time Features
+
+### SignalR Implementation
+- Use SignalR for real-time notifications
+- Implement connection management
+- Handle reconnection scenarios
+- Scale with Azure SignalR Service
+
+## 💳 Payment Integration
+
+### Stripe Implementation
+- Use Stripe SDK for secure payments
+- Implement webhook handling
+- Store payment intent IDs, not sensitive data
+- Handle payment failures gracefully
+- Implement refund workflows
+
+When implementing any feature, always consider:
+1. Security implications
+2. Performance impact
+3. User experience
+4. Error handling
+5. Testing requirements
+6. Documentation needs
+
+Focus on creating a scalable, maintainable, and secure codebase that provides excellent user experience across all platforms.
