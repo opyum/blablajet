@@ -12,7 +12,6 @@
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/EmptyLegs.API.runtimeconfig.json
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/EmptyLegs.API.dll
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/EmptyLegs.API.pdb
-/workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/HealthChecks.Redis.dll
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/AspNetCoreRateLimit.dll
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/AutoMapper.dll
 /workspace/backend/src/EmptyLegs.API/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

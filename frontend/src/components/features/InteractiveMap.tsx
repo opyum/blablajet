@@ -23,7 +23,6 @@ interface InteractiveMapProps {
   items: MapItem[]
   center?: { lat: number; lng: number }
   zoom?: number
-  onItemSelect?: (item: MapItem) => void
   activeFilters?: {
     type?: string[]
     priceRange?: [number, number]
@@ -60,7 +59,6 @@ export function InteractiveMap({
   items, 
   center = defaultCenter, 
   zoom = 6,
-  onItemSelect,
   activeFilters 
 }: InteractiveMapProps) {
   const [selectedItem, setSelectedItem] = useState<MapItem | null>(null)
@@ -133,7 +131,8 @@ export function InteractiveMap({
 
   const handleMarkerClick = (item: MapItem) => {
     setSelectedItem(item)
-    onItemSelect?.(item)
+    // Log the selected item for now
+    console.log('Selected item:', item)
   }
 
   const handleInfoWindowClose = () => {
@@ -258,7 +257,7 @@ export function InteractiveMap({
               )}
 
               <button 
-                onClick={() => onItemSelect?.(selectedItem)}
+                onClick={() => console.log('View details:', selectedItem)}
                 className="w-full mt-3 bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
               >
                 Voir les détails

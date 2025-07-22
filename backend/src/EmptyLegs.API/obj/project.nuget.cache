@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "nk3+Tp+H10I=",
+  "dgSpecHash": "sRjWFMjANAU=",
   "success": true,
   "projectFilePath": "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj",
   "expectedPackageFiles": [
-    "/home/ubuntu/.nuget/packages/aspnetcore.healthchecks.redis/7.0.1/aspnetcore.healthchecks.redis.7.0.1.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/aspnetcoreratelimit/5.0.0/aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -2,23 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "AspNetCore.HealthChecks.Redis/7.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "7.0.9",
-          "StackExchange.Redis": "2.6.122"
-        },
-        "compile": {
-          "lib/netstandard2.0/HealthChecks.Redis.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/HealthChecks.Redis.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "AspNetCoreRateLimit/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2452,20 +2435,6 @@
     }
   },
   "libraries": {
-    "AspNetCore.HealthChecks.Redis/7.0.1": {
-      "sha512": "zg1wNKhoW6HWV1mLtT+Bo3xpfOCDFGbc4GLsNTLzvR/+uYx3sVnWB6ZRwY3gT4K3hw4SRraBePtPVhul3p78HQ==",
-      "type": "package",
-      "path": "aspnetcore.healthchecks.redis/7.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aspnetcore.healthchecks.redis.7.0.1.nupkg.sha512",
-        "aspnetcore.healthchecks.redis.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/HealthChecks.Redis.dll",
-        "lib/netstandard2.0/HealthChecks.Redis.xml"
-      ]
-    },
     "AspNetCoreRateLimit/5.0.0": {
       "sha512": "6fq9+o1maGADUmpK/PvcF0DtXW2+7bSkIL7MDIo/agbIHKN8XkMQF4oze60DO731WaQmHmK260hB30FwPzCmEg==",
       "type": "package",
@@ -6313,7 +6282,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AspNetCore.HealthChecks.Redis >= 7.0.1",
       "AspNetCoreRateLimit >= 5.0.0",
       "EmptyLegs.Application >= 1.0.0",
       "EmptyLegs.Core >= 1.0.0",
@@ -6382,10 +6350,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AspNetCore.HealthChecks.Redis": {
-            "target": "Package",
-            "version": "[7.0.1, )"
-          },
           "AspNetCoreRateLimit": {
             "target": "Package",
             "version": "[5.0.0, )"

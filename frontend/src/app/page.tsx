@@ -97,7 +97,6 @@ export default function HomePage() {
               items={sampleMapItems}
               center={{ lat: 46.2276, lng: 2.2137 }}
               zoom={6}
-              onItemSelect={(item) => console.log('Selected item:', item)}
             />
           </div>
         </div>
