@@ -1,0 +1,250 @@
+# ===============================================
+# .gitignore pour projet multi-composants
+# Frontend: Next.js/React + Tailwind
+# Backend: .NET
+# Mobile: React Native
+# Infrastructure: Docker
+# ===============================================
+
+# ==================== GÉNÉRAL ====================
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Éditeurs et IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vs/
+.vscode/
+*.code-workspace
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.cache
+*.log
+*.logs
+logs/
+log/
+
+# Variables d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+
+# ==================== NODE.JS / REACT / NEXT.JS ====================
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Production builds
+build/
+dist/
+out/
+.next/
+
+# Cache directories
+.npm
+.yarn
+.pnpm
+.cache/
+.parcel-cache/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+coverage/
+.nyc_output/
+.coverage/
+
+# ==================== .NET ====================
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+.vscode/
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# MSTest results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
+
+# ==================== MOBILE (REACT NATIVE) ====================
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Metro
+.metro-health-check*
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+local.properties
+*.iml
+
+# iOS
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+ios/Pods/
+ios/build/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+
+# CocoaPods
+ios/Podfile.lock
+
+# ==================== DOCKER ====================
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+# ==================== BASE DE DONNÉES ====================
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+
+# SQL Server
+*.mdf
+*.ldf
+
+# ==================== AUTRES ====================
+# Certificats et clés
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*.orig
+
+# Fichiers compressés
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Documentation générée
+docs/build/
+.docusaurus/
+
+# Rapports et analytics
+.webpack-bundle-analyzer/
+bundle-analyzer-report.html
