@@ -53,10 +53,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AspNetCore.HealthChecks.Redis": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
             "AspNetCoreRateLimit": {
               "target": "Package",
               "version": "[5.0.0, )"
