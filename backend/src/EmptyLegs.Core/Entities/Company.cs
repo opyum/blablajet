@@ -21,5 +21,8 @@ public class Company : BaseEntity
     public ICollection<User> Users { get; set; } = new List<User>();
     public ICollection<Aircraft> Aircraft { get; set; } = new List<Aircraft>();
     public ICollection<Flight> Flights { get; set; } = new List<Flight>();
+    public ICollection<Yacht> Yachts { get; set; } = new List<Yacht>();
+    public ICollection<LuxuryCar> LuxuryCars { get; set; } = new List<LuxuryCar>();
+    public ICollection<LuxuryHotel> LuxuryHotels { get; set; } = new List<LuxuryHotel>();
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
 }

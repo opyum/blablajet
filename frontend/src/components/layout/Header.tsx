@@ -13,57 +13,72 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
+            <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
               <Plane className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">Empty Legs</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              EmptyJet
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               href="/search" 
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Rechercher
             </Link>
             <Link 
-              href="/how-it-works" 
-              className="text-gray-700 hover:text-primary transition-colors"
+              href="/yachts" 
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              Comment ça marche
+              Yachts
+            </Link>
+            <Link 
+              href="/cars" 
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
+              Voitures
+            </Link>
+            <Link 
+              href="/hotels" 
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
+              Hôtels
             </Link>
             <Link 
               href="/about" 
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               À propos
-            </Link>
-            <Link 
-              href="/help" 
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Aide
             </Link>
           </nav>
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link 
+              href="/dashboard"
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors"
+            >
+              <User className="w-4 h-4" />
+              <span>Mon compte</span>
+            </Link>
+            <Link 
               href="/company/login"
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Espace Compagnie
             </Link>
             <Link 
               href="/login"
-              className="btn btn-outline btn-sm"
+              className="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
             >
               Connexion
             </Link>
             <Link 
               href="/register"
-              className="btn btn-primary btn-sm"
+              className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-colors"
             >
               Inscription
             </Link>

@@ -18,6 +18,10 @@ public class User : BaseEntity
     public Guid? CompanyId { get; set; }
     public Company? Company { get; set; }
     public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+    public ICollection<YachtBooking> YachtBookings { get; set; } = new List<YachtBooking>();
+    public ICollection<CarBooking> CarBookings { get; set; } = new List<CarBooking>();
+    public ICollection<HotelBooking> HotelBookings { get; set; } = new List<HotelBooking>();
+    public ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
     public ICollection<UserAlert> Alerts { get; set; } = new List<UserAlert>();
     public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     
