@@ -16,41 +16,47 @@ public class CustomWebApplicationFactory<TStartup> : WebApplicationFactory<TStar
     {
         builder.ConfigureServices(services =>
         {
-            // Remove the app's DbContext registration
-            var descriptor = services.SingleOrDefault(
-                d => d.ServiceType == typeof(DbContextOptions<EmptyLegsDbContext>));
+            // Remove ALL existing DbContext registrations to avoid conflicts
+            var dbContextDescriptors = services.Where(d => 
+                d.ServiceType == typeof(DbContextOptions<EmptyLegsDbContext>) ||
+                d.ServiceType == typeof(DbContextOptions) ||
+                d.ServiceType == typeof(EmptyLegsDbContext) ||
+                d.ImplementationType?.Name.Contains("DbContext") == true)
+                .ToList();
 
-            if (descriptor != null)
+            foreach (var descriptor in dbContextDescriptors)
             {
                 services.Remove(descriptor);
             }
 
-            // Add a database context using an in-memory database for testing
-            services.AddDbContext<EmptyLegsDbContext>(options =>
-            {
-                options.UseInMemoryDatabase(DatabaseName);
-                options.EnableSensitiveDataLogging();
-            });
-
-            // Remove Redis cache registration for testing
-            var redisDescriptor = services.SingleOrDefault(
-                d => d.ServiceType.Name.Contains("Redis") || 
-                     d.ServiceType.Name.Contains("Cache"));
+            // Remove all cache-related services
+            var cacheDescriptors = services.Where(d => 
+                d.ServiceType.Name.Contains("Redis") || 
+                d.ServiceType.Name.Contains("Cache") ||
+                d.ServiceType.Name.Contains("Memory"))
+                .ToList();
             
-            if (redisDescriptor != null)
+            foreach (var descriptor in cacheDescriptors)
             {
-                services.Remove(redisDescriptor);
+                services.Remove(descriptor);
             }
 
-            // Add in-memory cache instead of Redis for testing
+            // Add clean in-memory database for testing
+            services.AddDbContext<EmptyLegsDbContext>(options =>
+            {
+                options.UseInMemoryDatabase($"TestDb_{DatabaseName}");
+                options.EnableSensitiveDataLogging();
+                options.ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.InMemoryEventId.TransactionIgnoredWarning));
+            });
+
+            // Add in-memory cache for testing
             services.AddMemoryCache();
 
-            // Override logging for testing
+            // Configure logging for testing
             services.AddLogging(loggingBuilder =>
             {
                 loggingBuilder.ClearProviders();
-                loggingBuilder.AddConsole();
-                loggingBuilder.SetMinimumLevel(LogLevel.Warning);
+                loggingBuilder.SetMinimumLevel(LogLevel.Error); // Reduce noise in tests
             });
         });
 

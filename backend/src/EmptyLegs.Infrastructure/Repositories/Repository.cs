@@ -19,35 +19,37 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
 
     public virtual async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.FindAsync(new object[] { id }, cancellationToken);
+        return await _dbSet.Where(e => !e.IsDeleted && e.Id == id).FirstOrDefaultAsync(cancellationToken);
     }
 
     public virtual async Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        return await _dbSet.ToListAsync(cancellationToken);
+        return await _dbSet.Where(e => !e.IsDeleted).ToListAsync(cancellationToken);
     }
 
     public virtual async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.Where(predicate).ToListAsync(cancellationToken);
+        return await _dbSet.Where(e => !e.IsDeleted).Where(predicate).ToListAsync(cancellationToken);
     }
 
     public virtual async Task<T?> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.FirstOrDefaultAsync(predicate, cancellationToken);
+        return await _dbSet.Where(e => !e.IsDeleted).FirstOrDefaultAsync(predicate, cancellationToken);
     }
 
     public virtual async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.AnyAsync(predicate, cancellationToken);
+        return await _dbSet.Where(e => !e.IsDeleted).AnyAsync(predicate, cancellationToken);
     }
 
     public virtual async Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null, CancellationToken cancellationToken = default)
     {
-        if (predicate == null)
-            return await _dbSet.CountAsync(cancellationToken);
+        var query = _dbSet.Where(e => !e.IsDeleted);
         
-        return await _dbSet.CountAsync(predicate, cancellationToken);
+        if (predicate == null)
+            return await query.CountAsync(cancellationToken);
+        
+        return await query.CountAsync(predicate, cancellationToken);
     }
 
     public virtual async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
@@ -97,6 +99,7 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
     public virtual async Task<IEnumerable<T>> GetPagedAsync(int page, int pageSize, CancellationToken cancellationToken = default)
     {
         return await _dbSet
+            .Where(e => !e.IsDeleted)
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
             .ToListAsync(cancellationToken);
@@ -109,9 +112,11 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         bool ascending = true, 
         CancellationToken cancellationToken = default)
     {
-        var query = ascending 
-            ? _dbSet.OrderBy(orderBy) 
-            : _dbSet.OrderByDescending(orderBy);
+        var query = _dbSet.Where(e => !e.IsDeleted);
+        
+        query = ascending 
+            ? query.OrderBy(orderBy) 
+            : query.OrderByDescending(orderBy);
 
         return await query
             .Skip((page - 1) * pageSize)

@@ -275,7 +275,10 @@ public class FlightsController : ControllerBase
             }
             
             if (updateFlightDto.AvailableSeats.HasValue)
+            {
                 flight.AvailableSeats = updateFlightDto.AvailableSeats.Value;
+                flight.TotalSeats = updateFlightDto.AvailableSeats.Value;
+            }
             
             if (updateFlightDto.Status.HasValue)
                 flight.Status = updateFlightDto.Status.Value;

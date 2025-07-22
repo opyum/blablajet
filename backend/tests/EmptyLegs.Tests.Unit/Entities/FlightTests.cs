@@ -31,11 +31,12 @@ public class FlightTests
     }
 
     [Fact]
-    public void Flight_AvailableSeats_Should_Calculate_Remaining_Seats()
+    public void Flight_RemainingSeats_Should_Calculate_Remaining_Seats()
     {
         // Arrange
         var flight = new Flight
         {
+            AvailableSeats = 10,
             TotalSeats = 10,
             Bookings = new List<Booking>
             {
@@ -45,10 +46,10 @@ public class FlightTests
         };
 
         // Act
-        var availableSeats = flight.AvailableSeats;
+        var remainingSeats = flight.RemainingSeats;
 
         // Assert
-        availableSeats.Should().Be(5); // 10 - (3 + 2) = 5
+        remainingSeats.Should().Be(5); // 10 - (3 + 2) = 5
     }
 
     [Fact]
@@ -77,6 +78,7 @@ public class FlightTests
         // Arrange
         var flight = new Flight
         {
+            AvailableSeats = 10,
             TotalSeats = 10,
             Bookings = new List<Booking>
             {
