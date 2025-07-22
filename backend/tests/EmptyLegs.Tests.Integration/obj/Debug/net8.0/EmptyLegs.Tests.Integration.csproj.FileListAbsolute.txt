@@ -309,7 +309,6 @@
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/refs/System.Xml.XPath.dll
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/refs/System.Xml.XPath.XDocument.dll
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/refs/WindowsBase.dll
-/workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/HealthChecks.Redis.dll
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/AspNetCoreRateLimit.dll
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/AutoMapper.dll
 /workspace/backend/tests/EmptyLegs.Tests.Integration/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

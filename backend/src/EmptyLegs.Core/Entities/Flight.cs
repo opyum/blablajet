@@ -34,8 +34,9 @@ public class Flight : BaseEntity
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
     
     // Computed properties
-    public int BookedSeats => Bookings.Where(b => b.Status == BookingStatus.Confirmed || b.Status == BookingStatus.PaymentConfirmed).Sum(b => b.PassengerCount);
+    public int BookedSeats => Bookings?.Where(b => b.Status == BookingStatus.Confirmed || b.Status == BookingStatus.PaymentConfirmed).Sum(b => b.PassengerCount) ?? 0;
+    public int RemainingSeats => Math.Max(0, AvailableSeats - (Bookings?.Sum(b => b.PassengerCount) ?? 0));
     public decimal OccupancyRate => TotalSeats > 0 ? (decimal)BookedSeats / TotalSeats : 0;
     public TimeSpan Duration => ArrivalTime - DepartureTime;
-    public bool IsFullyBooked => AvailableSeats <= BookedSeats;
+    public bool IsFullyBooked => AvailableSeats > 0 && BookedSeats >= AvailableSeats;
 }

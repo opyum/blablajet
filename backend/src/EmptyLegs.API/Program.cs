@@ -146,8 +146,8 @@ builder.Services.AddHttpContextAccessor();
 
 // Health Checks
 builder.Services.AddHealthChecks()
-    .AddDbContextCheck<EmptyLegsDbContext>()
-    .AddRedis(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379");
+    .AddDbContextCheck<EmptyLegsDbContext>();
+    // .AddRedis(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379"); // Désactivé temporairement
 
 var app = builder.Build();
 
