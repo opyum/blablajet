@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { QueryProvider } from '../components/providers/QueryProvider'
-import { ToastProvider } from '../components/providers/ToastProvider'
+import { QueryProvider } from '@/providers/query-provider'
+import { ThemeProvider } from '@/providers/theme-provider'
+import { AuthProvider } from '@/providers/auth-provider'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Empty Legs - Aviation Privée à Prix Réduits',
-  description: 'Trouvez et réservez des vols à vide en jet privé à prix avantageux. Plateforme de mise en relation entre compagnies aériennes et passagers.',
-  keywords: ['jet privé', 'empty legs', 'vols à vide', 'aviation privée', 'vol pas cher'],
+  title: 'Empty Legs - Private Jet Empty Leg Flights',
+  description: 'Find and book private jet empty leg flights at discounted prices. Premium aviation experience made accessible.',
 }
 
 export default function RootLayout({
@@ -18,11 +19,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <QueryProvider>
-          {children}
-          <ToastProvider />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <AuthProvider>
+              {children}
+              <Toaster />
+            </AuthProvider>
+          </ThemeProvider>
         </QueryProvider>
       </body>
     </html>
