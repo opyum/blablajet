@@ -103,6 +103,7 @@ bld/
 *.pidb
 *.svclog
 *.scc
+*.dll
 
 # MSTest results
 [Tt]est[Rr]esult*/

@@ -1,39 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "/workspace/backend/tests/EmptyLegs.Tests.Integration/EmptyLegs.Tests.Integration.csproj": {}
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\tests\\EmptyLegs.Tests.Integration\\EmptyLegs.Tests.Integration.csproj": {}
   },
   "projects": {
-    "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\EmptyLegs.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\EmptyLegs.API.csproj",
         "projectName": "EmptyLegs.API",
-        "projectPath": "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/workspace/backend/src/EmptyLegs.API/obj/",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\EmptyLegs.API.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj"
               }
             }
           }
@@ -47,7 +53,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -117,34 +124,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj",
         "projectName": "EmptyLegs.Application",
-        "projectPath": "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/workspace/backend/src/EmptyLegs.Application/obj/",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj"
               }
             }
           }
@@ -158,7 +171,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -213,26 +227,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj",
         "projectName": "EmptyLegs.Core",
-        "projectPath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/workspace/backend/src/EmptyLegs.Core/obj/",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -250,7 +270,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -277,37 +298,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj",
         "projectName": "EmptyLegs.Infrastructure",
-        "projectPath": "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/workspace/backend/src/EmptyLegs.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj"
               }
             }
           }
@@ -321,7 +348,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -372,43 +400,49 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspace/backend/tests/EmptyLegs.Tests.Integration/EmptyLegs.Tests.Integration.csproj": {
+    "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\tests\\EmptyLegs.Tests.Integration\\EmptyLegs.Tests.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/backend/tests/EmptyLegs.Tests.Integration/EmptyLegs.Tests.Integration.csproj",
+        "projectUniqueName": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\tests\\EmptyLegs.Tests.Integration\\EmptyLegs.Tests.Integration.csproj",
         "projectName": "EmptyLegs.Tests.Integration",
-        "projectPath": "/workspace/backend/tests/EmptyLegs.Tests.Integration/EmptyLegs.Tests.Integration.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/workspace/backend/tests/EmptyLegs.Tests.Integration/obj/",
+        "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\tests\\EmptyLegs.Tests.Integration\\EmptyLegs.Tests.Integration.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\tests\\EmptyLegs.Tests.Integration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.API/EmptyLegs.API.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\EmptyLegs.API.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.API\\EmptyLegs.API.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Application/EmptyLegs.Application.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Application\\EmptyLegs.Application.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Core/EmptyLegs.Core.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Core\\EmptyLegs.Core.csproj"
               },
-              "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj": {
-                "projectPath": "/workspace/backend/src/EmptyLegs.Infrastructure/EmptyLegs.Infrastructure.csproj"
+              "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\flori\\OneDrive\\Documents\\2-Travail\\Perso\\blablajet\\backend\\src\\EmptyLegs.Infrastructure\\EmptyLegs.Infrastructure.csproj"
               }
             }
           }
@@ -422,7 +456,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -501,7 +536,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
