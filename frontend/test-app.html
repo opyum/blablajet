@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Empty Legs Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .pending {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de l'Application Empty Legs</h1>
+    
+    <div class="test-section">
+        <h2>1. Test du Frontend Angular</h2>
+        <button onclick="testAngular()">Tester Angular</button>
+        <div id="angular-status" class="status pending">En attente...</div>
+        <pre id="angular-response"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Test de l'API Backend</h2>
+        <button onclick="testBackend()">Tester Backend</button>
+        <div id="backend-status" class="status pending">En attente...</div>
+        <pre id="backend-response"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Test de l'Authentification</h2>
+        <button onclick="testAuth()">Tester Login</button>
+        <div id="auth-status" class="status pending">En attente...</div>
+        <pre id="auth-response"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Test des Traductions</h2>
+        <button onclick="testTranslations()">Tester Traductions</button>
+        <div id="translation-status" class="status pending">En attente...</div>
+        <pre id="translation-response"></pre>
+    </div>
+
+    <script>
+        async function testAngular() {
+            const statusEl = document.getElementById('angular-status');
+            const responseEl = document.getElementById('angular-response');
+            
+            statusEl.className = 'status pending';
+            statusEl.textContent = 'Test en cours...';
+            
+            try {
+                const response = await fetch('http://localhost:4200');
+                const text = await response.text();
+                
+                if (response.ok) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ Frontend Angular accessible';
+                    responseEl.textContent = `Status: ${response.status}\nTaille: ${text.length} caractères`;
+                } else {
+                    statusEl.className = 'status error';
+                    statusEl.textContent = '✗ Erreur Frontend';
+                    responseEl.textContent = `Status: ${response.status}`;
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ Frontend non accessible';
+                responseEl.textContent = error.message;
+            }
+        }
+        
+        async function testBackend() {
+            const statusEl = document.getElementById('backend-status');
+            const responseEl = document.getElementById('backend-response');
+            
+            statusEl.className = 'status pending';
+            statusEl.textContent = 'Test en cours...';
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/health');
+                
+                if (response.ok) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ Backend API accessible';
+                    responseEl.textContent = `Status: ${response.status}`;
+                } else {
+                    statusEl.className = 'status error';
+                    statusEl.textContent = '✗ Erreur Backend';
+                    responseEl.textContent = `Status: ${response.status}`;
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ Backend non accessible';
+                responseEl.textContent = error.message;
+            }
+        }
+        
+        async function testAuth() {
+            const statusEl = document.getElementById('auth-status');
+            const responseEl = document.getElementById('auth-response');
+            
+            statusEl.className = 'status pending';
+            statusEl.textContent = 'Test en cours...';
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: 'test@example.com',
+                        password: 'Test123!'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ Endpoint d\'authentification fonctionnel';
+                    responseEl.textContent = JSON.stringify(data, null, 2);
+                } else {
+                    statusEl.className = 'status error';
+                    statusEl.textContent = '✗ Erreur d\'authentification';
+                    responseEl.textContent = JSON.stringify(data, null, 2);
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ API Auth non accessible';
+                responseEl.textContent = error.message;
+            }
+        }
+        
+        async function testTranslations() {
+            const statusEl = document.getElementById('translation-status');
+            const responseEl = document.getElementById('translation-response');
+            
+            statusEl.className = 'status pending';
+            statusEl.textContent = 'Test en cours...';
+            
+            try {
+                const frResponse = await fetch('http://localhost:4200/assets/i18n/fr.json');
+                const enResponse = await fetch('http://localhost:4200/assets/i18n/en.json');
+                
+                if (frResponse.ok && enResponse.ok) {
+                    const frData = await frResponse.json();
+                    const enData = await enResponse.json();
+                    
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ Fichiers de traduction accessibles';
+                    responseEl.textContent = `Français: ${Object.keys(frData).length} clés\nAnglais: ${Object.keys(enData).length} clés`;
+                } else {
+                    statusEl.className = 'status error';
+                    statusEl.textContent = '✗ Erreur traductions';
+                    responseEl.textContent = `FR: ${frResponse.status}, EN: ${enResponse.status}`;
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ Traductions non accessibles';
+                responseEl.textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>

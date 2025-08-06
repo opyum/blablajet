@@ -1,0 +1,452 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Opération réussie",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "Non",
+    "from": "De",
+    "to": "À",
+    "date": "Date",
+    "time": "Heure",
+    "price": "Prix",
+    "total": "Total",
+    "status": "Statut",
+    "actions": "Actions",
+    "details": "Détails",
+    "noData": "Aucune donnée disponible"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "flights": "Vols",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "logout": "Déconnexion",
+    "profile": "Mon profil",
+    "bookings": "Mes réservations",
+    "dashboard": "Tableau de bord",
+    "settings": "Paramètres",
+    "company": "Entreprise",
+    "admin": "Administration"
+  },
+  "flight": {
+    "search": {
+      "title": "Trouvez votre vol empty leg",
+      "subtitle": "Découvrez des vols privés à prix réduit",
+      "departure": "Départ",
+      "arrival": "Arrivée",
+      "date": "Date",
+      "passengers": "Passagers",
+      "searchButton": "Rechercher des vols",
+      "noResults": "Aucun vol trouvé",
+      "results": "{{count}} vol(s) trouvé(s)",
+      "filters": "Filtres",
+      "priceRange": "Fourchette de prix",
+      "aircraftType": "Type d'appareil",
+      "flightTime": "Durée du vol",
+      "clearFilters": "Effacer les filtres"
+    },
+    "details": {
+      "aircraft": "Appareil",
+      "seats": "Sièges disponibles",
+      "price": "Prix",
+      "pricePerPerson": "Prix par personne",
+      "bookNow": "Réserver maintenant",
+      "features": "Caractéristiques",
+      "departure": "Départ",
+      "arrival": "Arrivée",
+      "duration": "Durée",
+      "distance": "Distance",
+      "route": "Itinéraire",
+      "amenities": "Équipements",
+      "gallery": "Galerie photos",
+      "description": "Description",
+      "terms": "Conditions",
+      "availability": "Disponibilité"
+    },
+    "status": {
+      "available": "Disponible",
+      "booked": "Réservé",
+      "cancelled": "Annulé",
+      "completed": "Terminé",
+      "inProgress": "En cours"
+    }
+  },
+  "booking": {
+    "title": "Réservation",
+    "steps": {
+      "passengers": "Passagers",
+      "payment": "Paiement",
+      "confirmation": "Confirmation"
+    },
+    "passengerInfo": "Informations passagers",
+    "passenger": "Passager {{number}}",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "dateOfBirth": "Date de naissance",
+    "nationality": "Nationalité",
+    "passportNumber": "Numéro de passeport",
+    "passportExpiry": "Expiration du passeport",
+    "paymentInfo": "Informations de paiement",
+    "cardNumber": "Numéro de carte",
+    "cardHolder": "Titulaire de la carte",
+    "expiryDate": "Date d'expiration",
+    "cvv": "CVV",
+    "billingAddress": "Adresse de facturation",
+    "confirmation": "Confirmation",
+    "bookingReference": "Référence de réservation",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "taxes": "Taxes",
+    "fees": "Frais",
+    "terms": "J'accepte les conditions générales",
+    "termsRequired": "Vous devez accepter les conditions générales",
+    "processPayment": "Traiter le paiement",
+    "bookingSuccess": "Réservation confirmée !",
+    "bookingError": "Erreur lors de la réservation",
+    "downloadTicket": "Télécharger le billet",
+    "sendByEmail": "Envoyer par email"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "subtitle": "Accédez à votre compte",
+      "email": "Email",
+      "password": "Mot de passe",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "noAccount": "Pas encore de compte ?",
+      "signUp": "S'inscrire",
+      "loginError": "Email ou mot de passe incorrect",
+      "loginSuccess": "Connexion réussie"
+    },
+    "register": {
+      "title": "Inscription",
+      "subtitle": "Créez votre compte",
+      "userType": "Type de compte",
+      "customer": "Client",
+      "company": "Entreprise",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "companyName": "Nom de l'entreprise",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "phone": "Téléphone",
+      "submit": "S'inscrire",
+      "hasAccount": "Déjà un compte ?",
+      "signIn": "Se connecter",
+      "registerSuccess": "Inscription réussie",
+      "registerError": "Erreur lors de l'inscription"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "subtitle": "Réinitialisez votre mot de passe",
+      "email": "Email",
+      "submit": "Envoyer le lien",
+      "backToLogin": "Retour à la connexion",
+      "emailSent": "Email envoyé avec succès",
+      "emailError": "Erreur lors de l'envoi de l'email"
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le mot de passe",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "submit": "Réinitialiser",
+      "resetSuccess": "Mot de passe réinitialisé avec succès",
+      "resetError": "Erreur lors de la réinitialisation"
+    }
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Email invalide",
+    "minLength": "Minimum {{min}} caractères",
+    "maxLength": "Maximum {{max}} caractères",
+    "pattern": "Format invalide",
+    "passwordMatch": "Les mots de passe ne correspondent pas",
+    "invalidDate": "Date invalide",
+    "futureDate": "La date doit être dans le futur",
+    "pastDate": "La date doit être dans le passé",
+    "min": "La valeur minimale est {{min}}",
+    "max": "La valeur maximale est {{max}}"
+  },
+  "customer": {
+    "dashboard": {
+      "title": "Tableau de bord",
+      "welcome": "Bienvenue, {{name}}",
+      "upcomingFlights": "Vols à venir",
+      "recentBookings": "Réservations récentes",
+      "loyaltyPoints": "Points de fidélité",
+      "quickActions": "Actions rapides",
+      "searchFlights": "Rechercher des vols",
+      "viewBookings": "Voir mes réservations",
+      "editProfile": "Modifier mon profil",
+      "stats": {
+        "totalFlights": "Vols totaux",
+        "totalSpent": "Total dépensé",
+        "savedAmount": "Montant économisé",
+        "memberSince": "Membre depuis"
+      }
+    },
+    "bookings": {
+      "title": "Mes réservations",
+      "upcoming": "À venir",
+      "past": "Passées",
+      "cancelled": "Annulées",
+      "noBookings": "Aucune réservation",
+      "bookingDetails": "Détails de la réservation",
+      "cancelBooking": "Annuler la réservation",
+      "modifyBooking": "Modifier la réservation",
+      "downloadInvoice": "Télécharger la facture",
+      "cancelConfirm": "Êtes-vous sûr de vouloir annuler cette réservation ?",
+      "cancelSuccess": "Réservation annulée avec succès",
+      "cancelError": "Erreur lors de l'annulation"
+    },
+    "profile": {
+      "title": "Mon profil",
+      "personalInfo": "Informations personnelles",
+      "preferences": "Préférences",
+      "documents": "Documents",
+      "paymentMethods": "Moyens de paiement",
+      "notifications": "Notifications",
+      "security": "Sécurité",
+      "changePassword": "Changer le mot de passe",
+      "twoFactorAuth": "Authentification à deux facteurs",
+      "deleteAccount": "Supprimer le compte",
+      "updateSuccess": "Profil mis à jour avec succès",
+      "updateError": "Erreur lors de la mise à jour"
+    },
+    "loyalty": {
+      "title": "Programme de fidélité",
+      "currentLevel": "Niveau actuel",
+      "points": "Points",
+      "nextLevel": "Prochain niveau",
+      "pointsToNext": "Points jusqu'au prochain niveau",
+      "benefits": "Avantages",
+      "history": "Historique des points",
+      "redeem": "Échanger des points",
+      "levels": {
+        "bronze": "Bronze",
+        "silver": "Argent",
+        "gold": "Or",
+        "platinum": "Platine"
+      }
+    }
+  },
+  "company": {
+    "dashboard": {
+      "title": "Tableau de bord entreprise",
+      "welcome": "Bienvenue, {{company}}",
+      "activeFlights": "Vols actifs",
+      "totalRevenue": "Revenu total",
+      "occupancyRate": "Taux d'occupation",
+      "upcomingFlights": "Vols à venir",
+      "recentBookings": "Réservations récentes",
+      "quickActions": "Actions rapides",
+      "addFlight": "Ajouter un vol",
+      "viewAnalytics": "Voir les analytics",
+      "manageFleet": "Gérer la flotte"
+    },
+    "flights": {
+      "title": "Gestion des vols",
+      "addFlight": "Ajouter un vol",
+      "editFlight": "Modifier le vol",
+      "deleteFlight": "Supprimer le vol",
+      "flightDetails": "Détails du vol",
+      "aircraft": "Appareil",
+      "departure": "Départ",
+      "arrival": "Arrivée",
+      "price": "Prix",
+      "seats": "Sièges",
+      "status": "Statut",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce vol ?",
+      "deleteSuccess": "Vol supprimé avec succès",
+      "deleteError": "Erreur lors de la suppression",
+      "saveSuccess": "Vol enregistré avec succès",
+      "saveError": "Erreur lors de l'enregistrement"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "revenue": "Revenus",
+      "bookings": "Réservations",
+      "occupancy": "Occupation",
+      "routes": "Routes",
+      "period": "Période",
+      "daily": "Quotidien",
+      "weekly": "Hebdomadaire",
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "export": "Exporter",
+      "topRoutes": "Routes populaires",
+      "customerInsights": "Insights clients"
+    },
+    "settings": {
+      "title": "Paramètres entreprise",
+      "companyInfo": "Informations entreprise",
+      "fleet": "Flotte",
+      "team": "Équipe",
+      "billing": "Facturation",
+      "subscription": "Abonnement",
+      "addAircraft": "Ajouter un appareil",
+      "addTeamMember": "Ajouter un membre",
+      "roles": {
+        "admin": "Administrateur",
+        "manager": "Manager",
+        "operator": "Opérateur"
+      }
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Administration",
+      "systemStatus": "État du système",
+      "activeUsers": "Utilisateurs actifs",
+      "totalTransactions": "Transactions totales",
+      "revenue": "Revenus",
+      "alerts": "Alertes",
+      "recentActivity": "Activité récente"
+    },
+    "users": {
+      "title": "Gestion des utilisateurs",
+      "searchUsers": "Rechercher des utilisateurs",
+      "userDetails": "Détails utilisateur",
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "resetPassword": "Réinitialiser le mot de passe",
+      "viewActivity": "Voir l'activité",
+      "role": "Rôle",
+      "status": "Statut",
+      "lastLogin": "Dernière connexion"
+    },
+    "companies": {
+      "title": "Gestion des entreprises",
+      "pendingApproval": "En attente d'approbation",
+      "active": "Actives",
+      "suspended": "Suspendues",
+      "approve": "Approuver",
+      "reject": "Rejeter",
+      "suspend": "Suspendre",
+      "viewDetails": "Voir les détails",
+      "commission": "Commission",
+      "documents": "Documents"
+    },
+    "system": {
+      "title": "Configuration système",
+      "general": "Général",
+      "security": "Sécurité",
+      "maintenance": "Maintenance",
+      "logs": "Logs",
+      "backup": "Sauvegarde",
+      "restore": "Restauration",
+      "cache": "Cache",
+      "clearCache": "Vider le cache",
+      "maintenanceMode": "Mode maintenance",
+      "enableMaintenance": "Activer le mode maintenance",
+      "disableMaintenance": "Désactiver le mode maintenance"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Volez en jet privé à prix réduit",
+      "subtitle": "Découvrez les vols empty leg et économisez jusqu'à 75%",
+      "searchPlaceholder": "Où souhaitez-vous aller ?",
+      "cta": "Rechercher des vols"
+    },
+    "featuredFlights": {
+      "title": "Vols en vedette",
+      "subtitle": "Découvrez nos meilleures offres du moment"
+    },
+    "features": {
+      "title": "Pourquoi choisir Empty Legs Luxury",
+      "luxury": {
+        "title": "Luxe abordable",
+        "description": "Profitez du confort d'un jet privé à une fraction du prix"
+      },
+      "flexibility": {
+        "title": "Flexibilité",
+        "description": "Choisissez parmi une large sélection de vols et d'horaires"
+      },
+      "safety": {
+        "title": "Sécurité",
+        "description": "Tous nos opérateurs sont certifiés et régulièrement audités"
+      },
+      "service": {
+        "title": "Service premium",
+        "description": "Bénéficiez d'un service personnalisé du début à la fin"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "step1": {
+        "title": "Recherchez",
+        "description": "Trouvez votre vol empty leg idéal"
+      },
+      "step2": {
+        "title": "Réservez",
+        "description": "Réservez en ligne en quelques clics"
+      },
+      "step3": {
+        "title": "Volez",
+        "description": "Profitez de votre vol en jet privé"
+      }
+    },
+    "testimonials": {
+      "title": "Ce que disent nos clients",
+      "cta": "Voir tous les témoignages"
+    },
+    "newsletter": {
+      "title": "Restez informé",
+      "subtitle": "Recevez les meilleures offres directement dans votre boîte mail",
+      "placeholder": "Votre email",
+      "button": "S'inscrire",
+      "success": "Inscription réussie !",
+      "error": "Erreur lors de l'inscription"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "À propos",
+      "company": "Notre entreprise",
+      "team": "Notre équipe",
+      "careers": "Carrières",
+      "press": "Presse"
+    },
+    "services": {
+      "title": "Services",
+      "flights": "Vols empty leg",
+      "charter": "Affrètement",
+      "consulting": "Consulting"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Centre d'aide",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "terms": "Conditions générales",
+      "privacy": "Politique de confidentialité"
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© 2024 Empty Legs Luxury. Tous droits réservés."
+  }
+}
