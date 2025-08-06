@@ -1,0 +1,259 @@
+{
+  "common": {
+    "buttons": {
+      "search": "Rechercher",
+      "book": "Réserver",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "back": "Retour",
+      "next": "Suivant",
+      "save": "Enregistrer",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "close": "Fermer",
+      "submit": "Envoyer",
+      "reset": "Réinitialiser",
+      "loading": "Chargement..."
+    },
+    "labels": {
+      "departure": "Départ",
+      "arrival": "Arrivée",
+      "date": "Date",
+      "time": "Heure",
+      "passengers": "Passagers",
+      "price": "Prix",
+      "duration": "Durée",
+      "aircraft": "Aéronef",
+      "company": "Compagnie",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "messages": {
+      "loading": "Chargement en cours...",
+      "noResults": "Aucun résultat trouvé",
+      "error": "Une erreur est survenue",
+      "success": "Opération réussie",
+      "confirm": "Êtes-vous sûr ?",
+      "welcome": "Bienvenue",
+      "goodbye": "Au revoir"
+    },
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "email": "Adresse email invalide",
+      "minLength": "Minimum {{length}} caractères",
+      "maxLength": "Maximum {{length}} caractères",
+      "pattern": "Format invalide"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "search": "Rechercher",
+    "bookings": "Mes Réservations",
+    "profile": "Mon Profil",
+    "dashboard": "Tableau de Bord",
+    "admin": "Administration",
+    "company": "Compagnie",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "Inscription"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Volez en Jet Privé à Prix Exceptionnel",
+      "subtitle": "Découvrez nos vols Empty Legs et profitez de l'aviation de luxe à des tarifs exclusifs",
+      "cta": "Rechercher un vol",
+      "searchPlaceholder": "Où souhaitez-vous aller ?"
+    },
+    "features": {
+      "title": "Pourquoi choisir Empty Legs ?",
+      "luxury": {
+        "title": "Luxe Accessible",
+        "description": "Accédez à l'aviation privée avec des économies jusqu'à 75%"
+      },
+      "comfort": {
+        "title": "Confort Premium",
+        "description": "Voyagez dans des aéronefs haut de gamme avec un service personnalisé"
+      },
+      "flexibility": {
+        "title": "Flexibilité Totale",
+        "description": "Réservez facilement et modifiez vos vols selon vos besoins"
+      }
+    },
+    "testimonials": {
+      "title": "Ce que disent nos clients",
+      "subtitle": "Des expériences exceptionnelles partagées par nos voyageurs"
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "step1": {
+        "title": "Recherchez",
+        "description": "Trouvez le vol Empty Legs qui correspond à vos besoins"
+      },
+      "step2": {
+        "title": "Réservez",
+        "description": "Confirmez votre réservation en quelques clics"
+      },
+      "step3": {
+        "title": "Voyagez",
+        "description": "Profitez de votre vol en jet privé de luxe"
+      }
+    }
+  },
+  "flight": {
+    "search": {
+      "title": "Rechercher un vol Empty Legs",
+      "subtitle": "Trouvez votre vol privé au meilleur prix",
+      "form": {
+        "departureAirport": "Aéroport de départ",
+        "arrivalAirport": "Aéroport d'arrivée",
+        "departureDate": "Date de départ",
+        "passengerCount": "Nombre de passagers",
+        "searchButton": "Rechercher les vols",
+        "flexibility": "Dates flexibles"
+      },
+      "filters": {
+        "title": "Filtres",
+        "priceRange": "Fourchette de prix",
+        "departureTime": "Heure de départ",
+        "aircraftType": "Type d'aéronef",
+        "company": "Compagnie",
+        "services": "Services inclus"
+      }
+    },
+    "results": {
+      "title": "Vols disponibles",
+      "noFlights": "Aucun vol disponible pour ces critères",
+      "priceFrom": "À partir de",
+      "seatsAvailable": "{{count}} place(s) disponible(s)",
+      "bookNow": "Réserver maintenant",
+      "viewDetails": "Voir les détails",
+      "sortBy": "Trier par",
+      "sortOptions": {
+        "price": "Prix",
+        "departure": "Heure de départ",
+        "duration": "Durée",
+        "company": "Compagnie"
+      }
+    },
+    "details": {
+      "title": "Détails du vol",
+      "flightInfo": "Informations du vol",
+      "aircraftInfo": "Informations de l'aéronef",
+      "services": "Services inclus",
+      "terms": "Conditions",
+      "pricing": "Tarification",
+      "bookFlight": "Réserver ce vol",
+      "shareButton": "Partager"
+    }
+  },
+  "booking": {
+    "title": "Réservation",
+    "steps": {
+      "flightSelection": "Sélection du vol",
+      "passengerInfo": "Informations passagers",
+      "payment": "Paiement",
+      "confirmation": "Confirmation"
+    },
+    "passenger": {
+      "title": "Informations des passagers",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "dateOfBirth": "Date de naissance",
+      "nationality": "Nationalité",
+      "addPassenger": "Ajouter un passager"
+    },
+    "payment": {
+      "title": "Paiement",
+      "cardNumber": "Numéro de carte",
+      "expiryDate": "Date d'expiration",
+      "cvv": "CVV",
+      "cardholderName": "Nom du titulaire",
+      "billingAddress": "Adresse de facturation",
+      "total": "Total à payer",
+      "securePayment": "Paiement sécurisé"
+    },
+    "confirmation": {
+      "title": "Confirmation de réservation",
+      "bookingReference": "Référence de réservation",
+      "thankYou": "Merci pour votre réservation !",
+      "emailSent": "Un email de confirmation a été envoyé",
+      "downloadTicket": "Télécharger le billet",
+      "backToDashboard": "Retour au tableau de bord"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "subtitle": "Accédez à votre espace personnel",
+      "email": "Adresse email",
+      "password": "Mot de passe",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié ?",
+      "loginButton": "Se connecter",
+      "noAccount": "Pas de compte ?",
+      "signUp": "S'inscrire"
+    },
+    "register": {
+      "title": "Inscription",
+      "subtitle": "Créez votre compte Empty Legs",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "acceptTerms": "J'accepte les conditions d'utilisation",
+      "registerButton": "S'inscrire",
+      "hasAccount": "Déjà un compte ?",
+      "signIn": "Se connecter"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "subtitle": "Saisissez votre email pour réinitialiser votre mot de passe",
+      "email": "Adresse email",
+      "sendButton": "Envoyer",
+      "backToLogin": "Retour à la connexion",
+      "emailSent": "Email envoyé ! Vérifiez votre boîte de réception."
+    }
+  },
+  "dashboard": {
+    "welcome": "Bienvenue, {{name}} !",
+    "upcomingFlights": "Vols à venir",
+    "recentBookings": "Réservations récentes",
+    "loyaltyPoints": "Points de fidélité",
+    "recommendations": "Recommandations pour vous",
+    "stats": {
+      "totalFlights": "Vols effectués",
+      "savedAmount": "Économies réalisées",
+      "favoriteDestination": "Destination préférée"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Empty Legs",
+      "description": "La plateforme de référence pour les vols empty legs de luxe"
+    },
+    "links": {
+      "about": "À propos",
+      "contact": "Contact",
+      "privacy": "Confidentialité",
+      "terms": "Conditions d'utilisation",
+      "help": "Aide"
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Recevez nos meilleures offres",
+      "placeholder": "Votre email",
+      "subscribe": "S'abonner"
+    },
+    "copyright": "© 2025 Empty Legs. Tous droits réservés."
+  }
+}

@@ -1,0 +1,131 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero__background">
+    <div class="hero__overlay"></div>
+  </div>
+  
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__text">
+        <p class="hero__overline">{{ 'common.labels.company' | translate }}</p>
+        <h1 class="hero__title">{{ 'homepage.hero.title' | translate }}</h1>
+        <p class="hero__subtitle">{{ 'homepage.hero.subtitle' | translate }}</p>
+        
+        <div class="hero__actions">
+          <button 
+            mat-raised-button 
+            class="btn btn--primary btn--large"
+            routerLink="/search">
+            <mat-icon>search</mat-icon>
+            {{ 'homepage.hero.cta' | translate }}
+          </button>
+          
+          <button 
+            mat-stroked-button 
+            class="btn btn--outline btn--large">
+            <mat-icon>play_arrow</mat-icon>
+            Voir la vidéo
+          </button>
+        </div>
+      </div>
+      
+      <div class="hero__image">
+        <div class="hero__plane"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-header__overline">Excellence</p>
+      <h2 class="section-header__title">{{ 'homepage.features.title' | translate }}</h2>
+    </div>
+    
+    <div class="features__grid">
+      <div class="feature-card" *ngFor="let feature of features">
+        <div class="feature-card__icon">
+          <mat-icon>{{ feature.icon }}</mat-icon>
+        </div>
+        <h3 class="feature-card__title">{{ feature.titleKey | translate }}</h3>
+        <p class="feature-card__description">{{ feature.descriptionKey | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <p class="section-header__overline">Processus</p>
+      <h2 class="section-header__title">{{ 'homepage.howItWorks.title' | translate }}</h2>
+    </div>
+    
+    <div class="steps">
+      <div class="step" *ngFor="let step of steps; let i = index">
+        <div class="step__number">{{ step.step }}</div>
+        <div class="step__icon">
+          <mat-icon>{{ step.icon }}</mat-icon>
+        </div>
+        <h3 class="step__title">{{ step.titleKey | translate }}</h3>
+        <p class="step__description">{{ step.descriptionKey | translate }}</p>
+        
+        <!-- Connector line (not for last item) -->
+        <div class="step__connector" *ngIf="i < steps.length - 1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat">
+        <div class="stat__number">150+</div>
+        <div class="stat__label">Aéronefs disponibles</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">500+</div>
+        <div class="stat__label">Destinations</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">75%</div>
+        <div class="stat__label">Économies moyennes</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">24/7</div>
+        <div class="stat__label">Support client</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <div class="container">
+    <div class="cta__content">
+      <h2 class="cta__title">Prêt à voyager en jet privé ?</h2>
+      <p class="cta__subtitle">Découvrez nos offres exclusives et réservez votre prochain vol dès maintenant</p>
+      
+      <div class="cta__actions">
+        <button 
+          mat-raised-button 
+          class="btn btn--primary btn--large"
+          routerLink="/search">
+          {{ 'homepage.hero.cta' | translate }}
+        </button>
+        
+        <button 
+          mat-stroked-button 
+          class="btn btn--secondary btn--large"
+          routerLink="/auth/register">
+          Créer un compte
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,244 @@
+// Design System Variables - Empty Legs Luxury Platform
+
+// Color Palette - Luxury Theme
+:root {
+  // Primary Colors (Luxury & Elegance)
+  --color-deep-navy: #1a1a2e;
+  --color-luxury-gold: #d4af37;
+  --color-platinum: #e5e4e2;
+  --color-charcoal: #36454f;
+  --color-ivory: #fffff0;
+
+  // Secondary Colors
+  --color-midnight-blue: #191970;
+  --color-champagne: #f7e7ce;
+  --color-silver: #c0c0c0;
+  --color-pearl: #eae0c8;
+  --color-obsidian: #0f0f0f;
+
+  // Functional Colors
+  --color-success: #2e7d32;
+  --color-warning: #f57c00;
+  --color-error: #c62828;
+  --color-info: #1565c0;
+
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, var(--color-luxury-gold), #b8860b);
+  --gradient-luxury: linear-gradient(145deg, #ffffff, #f8f9fa);
+  --gradient-dark: linear-gradient(135deg, var(--color-deep-navy), var(--color-midnight-blue));
+
+  // Shadows
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 15px rgba(0, 0, 0, 0.15);
+  --shadow-luxury: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 20px 40px rgba(0, 0, 0, 0.15), 0 1px 12px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 4px 15px rgba(212, 175, 55, 0.3);
+  --shadow-gold-hover: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+// SCSS Variables for use in mixins and functions
+$primary-colors: (
+  'deep-navy': #1a1a2e,
+  'luxury-gold': #d4af37,
+  'platinum': #e5e4e2,
+  'charcoal': #36454f,
+  'ivory': #fffff0
+);
+
+$secondary-colors: (
+  'midnight-blue': #191970,
+  'champagne': #f7e7ce,
+  'silver': #c0c0c0,
+  'pearl': #eae0c8,
+  'obsidian': #0f0f0f
+);
+
+$functional-colors: (
+  'success': #2e7d32,
+  'warning': #f57c00,
+  'error': #c62828,
+  'info': #1565c0
+);
+
+// Typography
+$font-families: (
+  'heading': ('Playfair Display', serif),
+  'body': ('Inter', sans-serif),
+  'code': ('Consolas', 'Monaco', monospace)
+);
+
+$font-sizes: (
+  'xs': 0.75rem,    // 12px
+  'sm': 0.875rem,   // 14px
+  'base': 1rem,     // 16px
+  'lg': 1.125rem,   // 18px
+  'xl': 1.25rem,    // 20px
+  '2xl': 1.5rem,    // 24px
+  '3xl': 1.875rem,  // 30px
+  '4xl': 2.25rem,   // 36px
+  '5xl': 3rem       // 48px
+);
+
+$font-weights: (
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700
+);
+
+// Spacing
+$spacing: (
+  'xs': 0.25rem,   // 4px
+  'sm': 0.5rem,    // 8px
+  'md': 1rem,      // 16px
+  'lg': 1.5rem,    // 24px
+  'xl': 2rem,      // 32px
+  '2xl': 3rem,     // 48px
+  '3xl': 4rem,     // 64px
+  '4xl': 6rem,     // 96px
+  '5xl': 8rem      // 128px
+);
+
+// Border Radius
+$border-radius: (
+  'none': 0,
+  'sm': 0.25rem,    // 4px
+  'md': 0.5rem,     // 8px
+  'lg': 1rem,       // 16px
+  'xl': 1.5rem,     // 24px
+  'full': 9999px
+);
+
+// Transitions
+$transitions: (
+  'fast': 0.15s ease-out,
+  'normal': 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+  'slow': 0.5s cubic-bezier(0.23, 1, 0.32, 1)
+);
+
+// Breakpoints
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+// Z-index layers
+$z-index: (
+  'dropdown': 1000,
+  'sticky': 1020,
+  'fixed': 1030,
+  'modal-backdrop': 1040,
+  'modal': 1050,
+  'popover': 1060,
+  'tooltip': 1070
+);
+
+// Functions
+@function get-color($palette, $color) {
+  @return map-get($palette, $color);
+}
+
+@function get-spacing($size) {
+  @return map-get($spacing, $size);
+}
+
+@function get-font-size($size) {
+  @return map-get($font-sizes, $size);
+}
+
+@function get-font-weight($weight) {
+  @return map-get($font-weights, $weight);
+}
+
+@function get-border-radius($size) {
+  @return map-get($border-radius, $size);
+}
+
+@function get-transition($speed) {
+  @return map-get($transitions, $speed);
+}
+
+// Mixins
+@mixin font-style($family, $size, $weight: normal) {
+  font-family: #{map-get($font-families, $family)};
+  font-size: get-font-size($size);
+  font-weight: get-font-weight($weight);
+}
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: get-spacing('md') get-spacing('xl');
+  border: none;
+  border-radius: get-border-radius('lg');
+  cursor: pointer;
+  text-decoration: none;
+  transition: all get-transition('normal');
+  font-weight: get-font-weight('medium');
+  font-size: get-font-size('base');
+  line-height: 1.5;
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+@mixin card-base {
+  background: var(--gradient-luxury);
+  border-radius: get-border-radius('xl');
+  box-shadow: var(--shadow-luxury);
+  border: 1px solid rgba(get-color($primary-colors, 'platinum'), 0.3);
+  transition: all get-transition('normal');
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    padding-top: ($height / $width) * 100%;
+  }
+  
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
