@@ -59,7 +59,7 @@ import { NotificationService } from '@core/services/notification.service';
                 <mat-card-content class="text-center py-6">
                   <mat-icon class="text-4xl text-primary-gold mb-4">email</mat-icon>
                   <h3 class="text-xl font-semibold mb-2">Email</h3>
-                  <p class="text-gray-600">contact@empty-legs-luxury.com</p>
+                  <p class="text-gray-600">contact&#64;empty-legs-luxury.com</p>
                   <p class="text-sm text-gray-500 mt-2">Réponse sous 24h</p>
                 </mat-card-content>
               </mat-card>
@@ -200,12 +200,11 @@ import { NotificationService } from '@core/services/notification.service';
   `]
 })
 export class ContactComponent {
-  private fb = inject(FormBuilder);
   private notificationService = inject(NotificationService);
   
   isSubmitting = false;
   
-  contactForm = this.fb.group({
+  contactForm = inject(FormBuilder).group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],

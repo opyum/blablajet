@@ -66,11 +66,15 @@ import { finalize } from 'rxjs/operators';
           class="w-full btn-premium mb-4"
           [disabled]="!forgotPasswordForm.valid || isLoading">
           @if (isLoading) {
-            <mat-icon class="animate-spin mr-2">refresh</mat-icon>
-            Envoi en cours...
+            <ng-container>
+              <mat-icon class="animate-spin mr-2">refresh</mat-icon>
+              Envoi en cours...
+            </ng-container>
           } @else {
-            <mat-icon class="mr-2">send</mat-icon>
-            {{ 'auth.forgotPassword.submit' | transloco }}
+            <ng-container>
+              <mat-icon class="mr-2">send</mat-icon>
+              {{ 'auth.forgotPassword.submit' | transloco }}
+            </ng-container>
           }
         </button>
 

@@ -98,8 +98,10 @@ import { finalize } from 'rxjs/operators';
         class="w-full btn-premium mb-4"
         [disabled]="!loginForm.valid || isLoading">
         @if (isLoading) {
-          <mat-icon class="animate-spin mr-2">refresh</mat-icon>
-          Connexion en cours...
+          <ng-container>
+            <mat-icon class="animate-spin mr-2">refresh</mat-icon>
+            Connexion en cours...
+          </ng-container>
         } @else {
           {{ 'auth.login.submit' | transloco }}
         }

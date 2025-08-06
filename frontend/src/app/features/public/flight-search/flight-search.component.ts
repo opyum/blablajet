@@ -62,7 +62,7 @@ import { FeaturedFlightsComponent } from '../home/components/featured-flights/fe
                   (input)="onAirportSearch('departure', $event)">
                 <mat-icon matPrefix>flight_takeoff</mat-icon>
                 <mat-autocomplete #departureAuto="matAutocomplete" [displayWith]="displayAirport">
-                  @for (airport of departureAirports$ | async; track airport.id) {
+                  @for (airport of (departureAirports$ | async) || []; track airport.id) {
                     <mat-option [value]="airport">
                       {{ airportService.formatAirportDisplay(airport) }}
                     </mat-option>
@@ -80,7 +80,7 @@ import { FeaturedFlightsComponent } from '../home/components/featured-flights/fe
                   (input)="onAirportSearch('arrival', $event)">
                 <mat-icon matPrefix>flight_land</mat-icon>
                 <mat-autocomplete #arrivalAuto="matAutocomplete" [displayWith]="displayAirport">
-                  @for (airport of arrivalAirports$ | async; track airport.id) {
+                  @for (airport of (arrivalAirports$ | async) || []; track airport.id) {
                     <mat-option [value]="airport">
                       {{ airportService.formatAirportDisplay(airport) }}
                     </mat-option>
@@ -225,7 +225,7 @@ export class FlightSearchComponent implements OnInit {
     passengers: [1],
     minPrice: [0],
     maxPrice: [50000],
-    aircraftType: [[]],
+    aircraftType: [null],
     sortBy: ['price']
   });
 
@@ -260,15 +260,18 @@ export class FlightSearchComponent implements OnInit {
   onSearch(): void {
     this.isLoading = true;
     
+    const departureAirport = this.searchForm.get('departure')?.value;
+    const arrivalAirport = this.searchForm.get('arrival')?.value;
+    
     const criteria: FlightSearchCriteria = {
-      departure: this.searchForm.get('departure')?.value?.code,
-      arrival: this.searchForm.get('arrival')?.value?.code,
-      date: this.searchForm.get('date')?.value,
-      passengers: this.searchForm.get('passengers')?.value,
-      minPrice: this.searchForm.get('minPrice')?.value,
-      maxPrice: this.searchForm.get('maxPrice')?.value,
-      aircraftType: this.searchForm.get('aircraftType')?.value,
-      sortBy: this.searchForm.get('sortBy')?.value
+      departure: (departureAirport && typeof departureAirport === 'object' && 'code' in departureAirport) ? departureAirport.code : departureAirport,
+      arrival: (arrivalAirport && typeof arrivalAirport === 'object' && 'code' in arrivalAirport) ? arrivalAirport.code : arrivalAirport,
+      date: this.searchForm.get('date')?.value || undefined,
+      passengers: this.searchForm.get('passengers')?.value || undefined,
+      minPrice: this.searchForm.get('minPrice')?.value || undefined,
+      maxPrice: this.searchForm.get('maxPrice')?.value || undefined,
+      aircraftType: this.searchForm.get('aircraftType')?.value || undefined,
+      sortBy: (this.searchForm.get('sortBy')?.value as 'price' | 'duration' | 'departure' | undefined) || undefined
     };
 
     this.flightService.searchFlights(criteria).subscribe({
@@ -287,7 +290,7 @@ export class FlightSearchComponent implements OnInit {
     this.searchForm.patchValue({
       minPrice: 0,
       maxPrice: 50000,
-      aircraftType: []
+      aircraftType: null
     });
     this.onSearch();
   }

@@ -64,8 +64,10 @@ import { NotificationService } from '@core/services/notification.service';
             (click)="resendVerification()"
             [disabled]="isResending">
             @if (isResending) {
-              <mat-icon class="animate-spin mr-2">refresh</mat-icon>
-              Envoi en cours...
+              <ng-container>
+                <mat-icon class="animate-spin mr-2">refresh</mat-icon>
+                Envoi en cours...
+              </ng-container>
             } @else {
               Renvoyer l'email
             }

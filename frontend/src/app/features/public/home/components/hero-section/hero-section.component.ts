@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -137,14 +137,12 @@ import { Router } from '@angular/router';
   `]
 })
 export class HeroSectionComponent {
+  private fb = inject(FormBuilder);
+  private router = inject(Router);
+  
   searchForm = this.fb.group({
     destination: ['', Validators.required]
   });
-
-  constructor(
-    private fb: FormBuilder,
-    private router: Router
-  ) {}
 
   onSearch(): void {
     if (this.searchForm.valid) {

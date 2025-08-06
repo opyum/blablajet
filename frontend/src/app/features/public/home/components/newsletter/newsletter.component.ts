@@ -107,12 +107,11 @@ import { NotificationService } from '@core/services/notification.service';
   `]
 })
 export class NewsletterComponent {
-  private fb = inject(FormBuilder);
   private notificationService = inject(NotificationService);
   
   isSubmitting = false;
   
-  newsletterForm = this.fb.group({
+  newsletterForm = inject(FormBuilder).group({
     email: ['', [Validators.required, Validators.email]]
   });
 

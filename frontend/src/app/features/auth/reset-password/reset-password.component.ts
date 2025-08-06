@@ -100,8 +100,10 @@ import { passwordMatchValidator } from '../register/register.component';
           class="w-full btn-premium"
           [disabled]="!resetPasswordForm.valid || isLoading">
           @if (isLoading) {
-            <mat-icon class="animate-spin mr-2">refresh</mat-icon>
-            Réinitialisation en cours...
+            <ng-container>
+              <mat-icon class="animate-spin mr-2">refresh</mat-icon>
+              Réinitialisation en cours...
+            </ng-container>
           } @else {
             {{ 'auth.resetPassword.submit' | transloco }}
           }

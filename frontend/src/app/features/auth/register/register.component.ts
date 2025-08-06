@@ -214,8 +214,10 @@ export function passwordMatchValidator(control: AbstractControl): {[key: string]
               [disabled]="!isFormValid || isLoading"
               (click)="onSubmit()">
               @if (isLoading) {
-                <mat-icon class="animate-spin mr-2">refresh</mat-icon>
-                Inscription en cours...
+                <ng-container>
+                  <mat-icon class="animate-spin mr-2">refresh</mat-icon>
+                  Inscription en cours...
+                </ng-container>
               } @else {
                 {{ 'auth.register.submit' | transloco }}
               }
@@ -265,6 +267,19 @@ export class RegisterComponent {
     email: ['', [Validators.required, Validators.email]],
     phoneNumber: ['']
   });
+
+  constructor() {
+    // Update company name validation based on user type
+    this.accountTypeForm.get('userType')?.valueChanges.subscribe(userType => {
+      const companyNameControl = this.personalInfoForm.get('companyName');
+      if (userType === 'Company') {
+        companyNameControl?.setValidators(Validators.required);
+      } else {
+        companyNameControl?.clearValidators();
+      }
+      companyNameControl?.updateValueAndValidity();
+    });
+  }
   
   passwordForm = this.fb.group({
     password: ['', [Validators.required, Validators.minLength(8)]],

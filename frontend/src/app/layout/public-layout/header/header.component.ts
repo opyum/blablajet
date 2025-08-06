@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 import { AuthService } from '@core/services/auth.service';
 import { LanguageSelectorComponent } from '@shared/components/language-selector/language-selector.component';
 
@@ -21,6 +22,7 @@ import { LanguageSelectorComponent } from '@shared/components/language-selector/
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatDividerModule,
     LanguageSelectorComponent
   ],
   template: `

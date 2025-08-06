@@ -11,40 +11,24 @@ export class BaseApiService {
   protected http = inject(HttpClient);
   protected baseUrl = environment.apiUrl;
 
-  protected get<T>(endpoint: string, params?: HttpParams | { [param: string]: string | string[] }): Observable<T> {
-    return this.http.get<T>(`${this.baseUrl}${endpoint}`, { params })
-      .pipe(
-        retry(2),
-        catchError(this.handleError)
-      );
+  protected get<T>(endpoint: string, params?: HttpParams | { [param: string]: string | string[] } | any): Observable<T> {
+    return this.http.get<T>(`${this.baseUrl}${endpoint}`, { params }) as Observable<T>;
   }
 
   protected post<T>(endpoint: string, body: any, options?: any): Observable<T> {
-    return this.http.post<T>(`${this.baseUrl}${endpoint}`, body, options)
-      .pipe(
-        catchError(this.handleError)
-      );
+    return this.http.post<T>(`${this.baseUrl}${endpoint}`, body, options) as Observable<T>;
   }
 
   protected put<T>(endpoint: string, body: any, options?: any): Observable<T> {
-    return this.http.put<T>(`${this.baseUrl}${endpoint}`, body, options)
-      .pipe(
-        catchError(this.handleError)
-      );
+    return this.http.put<T>(`${this.baseUrl}${endpoint}`, body, options) as Observable<T>;
   }
 
   protected patch<T>(endpoint: string, body: any, options?: any): Observable<T> {
-    return this.http.patch<T>(`${this.baseUrl}${endpoint}`, body, options)
-      .pipe(
-        catchError(this.handleError)
-      );
+    return this.http.patch<T>(`${this.baseUrl}${endpoint}`, body, options) as Observable<T>;
   }
 
   protected delete<T>(endpoint: string, options?: any): Observable<T> {
-    return this.http.delete<T>(`${this.baseUrl}${endpoint}`, options)
-      .pipe(
-        catchError(this.handleError)
-      );
+    return this.http.delete<T>(`${this.baseUrl}${endpoint}`, options) as Observable<T>;
   }
 
   private handleError(error: HttpErrorResponse): Observable<never> {
