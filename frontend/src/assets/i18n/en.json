@@ -1,0 +1,452 @@
+{
+  "common": {
+    "search": "Search",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "from": "From",
+    "to": "To",
+    "date": "Date",
+    "time": "Time",
+    "price": "Price",
+    "total": "Total",
+    "status": "Status",
+    "actions": "Actions",
+    "details": "Details",
+    "noData": "No data available"
+  },
+  "navigation": {
+    "home": "Home",
+    "flights": "Flights",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Sign Up",
+    "logout": "Logout",
+    "profile": "My Profile",
+    "bookings": "My Bookings",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "company": "Company",
+    "admin": "Administration"
+  },
+  "flight": {
+    "search": {
+      "title": "Find your empty leg flight",
+      "subtitle": "Discover private flights at reduced prices",
+      "departure": "Departure",
+      "arrival": "Arrival",
+      "date": "Date",
+      "passengers": "Passengers",
+      "searchButton": "Search flights",
+      "noResults": "No flights found",
+      "results": "{{count}} flight(s) found",
+      "filters": "Filters",
+      "priceRange": "Price range",
+      "aircraftType": "Aircraft type",
+      "flightTime": "Flight duration",
+      "clearFilters": "Clear filters"
+    },
+    "details": {
+      "aircraft": "Aircraft",
+      "seats": "Available seats",
+      "price": "Price",
+      "pricePerPerson": "Price per person",
+      "bookNow": "Book now",
+      "features": "Features",
+      "departure": "Departure",
+      "arrival": "Arrival",
+      "duration": "Duration",
+      "distance": "Distance",
+      "route": "Route",
+      "amenities": "Amenities",
+      "gallery": "Photo gallery",
+      "description": "Description",
+      "terms": "Terms",
+      "availability": "Availability"
+    },
+    "status": {
+      "available": "Available",
+      "booked": "Booked",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "inProgress": "In Progress"
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "steps": {
+      "passengers": "Passengers",
+      "payment": "Payment",
+      "confirmation": "Confirmation"
+    },
+    "passengerInfo": "Passenger information",
+    "passenger": "Passenger {{number}}",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "dateOfBirth": "Date of birth",
+    "nationality": "Nationality",
+    "passportNumber": "Passport number",
+    "passportExpiry": "Passport expiry",
+    "paymentInfo": "Payment information",
+    "cardNumber": "Card number",
+    "cardHolder": "Card holder",
+    "expiryDate": "Expiry date",
+    "cvv": "CVV",
+    "billingAddress": "Billing address",
+    "confirmation": "Confirmation",
+    "bookingReference": "Booking reference",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "taxes": "Taxes",
+    "fees": "Fees",
+    "terms": "I accept the terms and conditions",
+    "termsRequired": "You must accept the terms and conditions",
+    "processPayment": "Process payment",
+    "bookingSuccess": "Booking confirmed!",
+    "bookingError": "Error during booking",
+    "downloadTicket": "Download ticket",
+    "sendByEmail": "Send by email"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Access your account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "submit": "Login",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "loginError": "Incorrect email or password",
+      "loginSuccess": "Login successful"
+    },
+    "register": {
+      "title": "Sign Up",
+      "subtitle": "Create your account",
+      "userType": "Account type",
+      "customer": "Customer",
+      "company": "Company",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "companyName": "Company name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "phone": "Phone",
+      "submit": "Sign up",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "registerSuccess": "Registration successful",
+      "registerError": "Error during registration"
+    },
+    "forgotPassword": {
+      "title": "Forgot password",
+      "subtitle": "Reset your password",
+      "email": "Email",
+      "submit": "Send link",
+      "backToLogin": "Back to login",
+      "emailSent": "Email sent successfully",
+      "emailError": "Error sending email"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "submit": "Reset",
+      "resetSuccess": "Password reset successfully",
+      "resetError": "Error resetting password"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Invalid email",
+    "minLength": "Minimum {{min}} characters",
+    "maxLength": "Maximum {{max}} characters",
+    "pattern": "Invalid format",
+    "passwordMatch": "Passwords do not match",
+    "invalidDate": "Invalid date",
+    "futureDate": "Date must be in the future",
+    "pastDate": "Date must be in the past",
+    "min": "Minimum value is {{min}}",
+    "max": "Maximum value is {{max}}"
+  },
+  "customer": {
+    "dashboard": {
+      "title": "Dashboard",
+      "welcome": "Welcome, {{name}}",
+      "upcomingFlights": "Upcoming flights",
+      "recentBookings": "Recent bookings",
+      "loyaltyPoints": "Loyalty points",
+      "quickActions": "Quick actions",
+      "searchFlights": "Search flights",
+      "viewBookings": "View my bookings",
+      "editProfile": "Edit my profile",
+      "stats": {
+        "totalFlights": "Total flights",
+        "totalSpent": "Total spent",
+        "savedAmount": "Amount saved",
+        "memberSince": "Member since"
+      }
+    },
+    "bookings": {
+      "title": "My bookings",
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "cancelled": "Cancelled",
+      "noBookings": "No bookings",
+      "bookingDetails": "Booking details",
+      "cancelBooking": "Cancel booking",
+      "modifyBooking": "Modify booking",
+      "downloadInvoice": "Download invoice",
+      "cancelConfirm": "Are you sure you want to cancel this booking?",
+      "cancelSuccess": "Booking cancelled successfully",
+      "cancelError": "Error cancelling booking"
+    },
+    "profile": {
+      "title": "My profile",
+      "personalInfo": "Personal information",
+      "preferences": "Preferences",
+      "documents": "Documents",
+      "paymentMethods": "Payment methods",
+      "notifications": "Notifications",
+      "security": "Security",
+      "changePassword": "Change password",
+      "twoFactorAuth": "Two-factor authentication",
+      "deleteAccount": "Delete account",
+      "updateSuccess": "Profile updated successfully",
+      "updateError": "Error updating profile"
+    },
+    "loyalty": {
+      "title": "Loyalty program",
+      "currentLevel": "Current level",
+      "points": "Points",
+      "nextLevel": "Next level",
+      "pointsToNext": "Points to next level",
+      "benefits": "Benefits",
+      "history": "Points history",
+      "redeem": "Redeem points",
+      "levels": {
+        "bronze": "Bronze",
+        "silver": "Silver",
+        "gold": "Gold",
+        "platinum": "Platinum"
+      }
+    }
+  },
+  "company": {
+    "dashboard": {
+      "title": "Company dashboard",
+      "welcome": "Welcome, {{company}}",
+      "activeFlights": "Active flights",
+      "totalRevenue": "Total revenue",
+      "occupancyRate": "Occupancy rate",
+      "upcomingFlights": "Upcoming flights",
+      "recentBookings": "Recent bookings",
+      "quickActions": "Quick actions",
+      "addFlight": "Add flight",
+      "viewAnalytics": "View analytics",
+      "manageFleet": "Manage fleet"
+    },
+    "flights": {
+      "title": "Flight management",
+      "addFlight": "Add flight",
+      "editFlight": "Edit flight",
+      "deleteFlight": "Delete flight",
+      "flightDetails": "Flight details",
+      "aircraft": "Aircraft",
+      "departure": "Departure",
+      "arrival": "Arrival",
+      "price": "Price",
+      "seats": "Seats",
+      "status": "Status",
+      "deleteConfirm": "Are you sure you want to delete this flight?",
+      "deleteSuccess": "Flight deleted successfully",
+      "deleteError": "Error deleting flight",
+      "saveSuccess": "Flight saved successfully",
+      "saveError": "Error saving flight"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "revenue": "Revenue",
+      "bookings": "Bookings",
+      "occupancy": "Occupancy",
+      "routes": "Routes",
+      "period": "Period",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "export": "Export",
+      "topRoutes": "Popular routes",
+      "customerInsights": "Customer insights"
+    },
+    "settings": {
+      "title": "Company settings",
+      "companyInfo": "Company information",
+      "fleet": "Fleet",
+      "team": "Team",
+      "billing": "Billing",
+      "subscription": "Subscription",
+      "addAircraft": "Add aircraft",
+      "addTeamMember": "Add team member",
+      "roles": {
+        "admin": "Administrator",
+        "manager": "Manager",
+        "operator": "Operator"
+      }
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Administration",
+      "systemStatus": "System status",
+      "activeUsers": "Active users",
+      "totalTransactions": "Total transactions",
+      "revenue": "Revenue",
+      "alerts": "Alerts",
+      "recentActivity": "Recent activity"
+    },
+    "users": {
+      "title": "User management",
+      "searchUsers": "Search users",
+      "userDetails": "User details",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "resetPassword": "Reset password",
+      "viewActivity": "View activity",
+      "role": "Role",
+      "status": "Status",
+      "lastLogin": "Last login"
+    },
+    "companies": {
+      "title": "Company management",
+      "pendingApproval": "Pending approval",
+      "active": "Active",
+      "suspended": "Suspended",
+      "approve": "Approve",
+      "reject": "Reject",
+      "suspend": "Suspend",
+      "viewDetails": "View details",
+      "commission": "Commission",
+      "documents": "Documents"
+    },
+    "system": {
+      "title": "System configuration",
+      "general": "General",
+      "security": "Security",
+      "maintenance": "Maintenance",
+      "logs": "Logs",
+      "backup": "Backup",
+      "restore": "Restore",
+      "cache": "Cache",
+      "clearCache": "Clear cache",
+      "maintenanceMode": "Maintenance mode",
+      "enableMaintenance": "Enable maintenance mode",
+      "disableMaintenance": "Disable maintenance mode"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fly private jet at reduced price",
+      "subtitle": "Discover empty leg flights and save up to 75%",
+      "searchPlaceholder": "Where do you want to go?",
+      "cta": "Search flights"
+    },
+    "featuredFlights": {
+      "title": "Featured Flights",
+      "subtitle": "Discover our best current offers"
+    },
+    "features": {
+      "title": "Why choose Empty Legs Luxury",
+      "luxury": {
+        "title": "Affordable luxury",
+        "description": "Enjoy the comfort of a private jet at a fraction of the price"
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "Choose from a wide selection of flights and schedules"
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "All our operators are certified and regularly audited"
+      },
+      "service": {
+        "title": "Premium service",
+        "description": "Benefit from personalized service from start to finish"
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1": {
+        "title": "Search",
+        "description": "Find your ideal empty leg flight"
+      },
+      "step2": {
+        "title": "Book",
+        "description": "Book online in just a few clicks"
+      },
+      "step3": {
+        "title": "Fly",
+        "description": "Enjoy your private jet flight"
+      }
+    },
+    "testimonials": {
+      "title": "What our customers say",
+      "cta": "View all testimonials"
+    },
+    "newsletter": {
+      "title": "Stay informed",
+      "subtitle": "Receive the best offers directly in your inbox",
+      "placeholder": "Your email",
+      "button": "Subscribe",
+      "success": "Subscription successful!",
+      "error": "Error during subscription"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "About",
+      "company": "Our company",
+      "team": "Our team",
+      "careers": "Careers",
+      "press": "Press"
+    },
+    "services": {
+      "title": "Services",
+      "flights": "Empty leg flights",
+      "charter": "Charter",
+      "consulting": "Consulting"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help center",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "terms": "Terms and conditions",
+      "privacy": "Privacy policy"
+    },
+    "social": {
+      "title": "Follow us",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© 2024 Empty Legs Luxury. All rights reserved."
+  }
+}
